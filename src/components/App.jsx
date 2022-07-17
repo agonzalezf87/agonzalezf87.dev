@@ -12,7 +12,7 @@ const App = () => {
   const initialState = useInitialState()
   return (
     <>
-      <SiteContext.Provider value={{ language: 'es', initialState: initialState }}>
+      <SiteContext.Provider value={{ language: 'en', initialState: initialState }}>
         <Header />
         <Switch>
           <Route path='/' component={LandingPage} />

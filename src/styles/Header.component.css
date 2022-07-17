@@ -2,3 +2,13 @@
     width: 100%;
     min-width: var(--mobile-minwidth);
 }
+
+.LangButton {
+    cursor: pointer;
+    width: 48px;
+    height: 36px;
+}
+
+.LangButton img {
+    width: 100%;
+}

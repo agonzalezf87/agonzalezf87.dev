@@ -1,13 +1,11 @@
-import { useContext } from 'react'
-import { SiteContext } from '../context/SiteContext'
+import { LangButton } from './LangButton'
+import '../styles/Header.component.css'
 
 const Header = () => {
-  const { language, initialState } = useContext(SiteContext)
-  const { en, es } = initialState.state
-  
   return (
     <header className='Header'>
-      Header
+      <p>Header</p>
+      <LangButton />
     </header>
   )
 }
