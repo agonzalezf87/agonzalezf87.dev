@@ -3,9 +3,10 @@ import React, {createContext, useState} from 'react'
 const SiteContext = createContext()
 
 const LangProvider = (props) => {
-const [language, setLang] = useState('en')
+  const [language, setLang] = useState('en')
+  const [openMenu, setOpenMenu] = useState(false)
 
-const changeLang = () => {
+  const changeLang = () => {
   if(language === 'en'){
       setLang('es')
     }
@@ -16,7 +17,14 @@ const changeLang = () => {
 
   return (
     <>
-      <SiteContext.Provider value={{ language, changeLang }}>
+      <SiteContext.Provider 
+        value={{
+           language,
+           openMenu,
+           changeLang,
+           setOpenMenu 
+        }}
+      >
           {props.children}
       </SiteContext.Provider>
     </>
