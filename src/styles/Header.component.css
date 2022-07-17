@@ -1,8 +1,41 @@
-
-
 .Header {
+    position: absolute;
     width: 100%;
     min-width: var(--mobile-minwidth);
+    height: 62px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    background-color: var(--dark-color-1);
+    color: var(--brand-color);
+}
+
+.Header nav, .Header aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Logo {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.Logo img {
+    width: 56px;
+    height: 56px;
+}
+
+.Logo span {
+    display: none;
 }
 
 .LangButton {
@@ -29,9 +62,30 @@
     padding: 8px;
     border: none;
     background-color: var(--brand-color);
-    color: #fff;
+    color: var(--white-color);
     font-weight: medium;
     border-radius: 0 5px 5px 0;
     box-shadow: 0 0 1px rgb(145, 145, 145);
     outline: none;
+}
+
+.BurgerButton {
+    cursor: pointer;
+    width: 48px;
+    height: 36px;
+    background-color: var(--brand-color);
+    border-radius: 6px;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.BurgerButton svg {
+    fill: var(--white-color);
+    font-size: 36px;
+}
+
+@media screen and (min-width: 480px){
+    .Logo span {
+        display: inline-block;
+    }
 }

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { LangProvider } from '../context/SiteContext'
 import { UI } from './UI'
 

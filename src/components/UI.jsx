@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Route, Switch } from 'wouter'
+import { Route, Switch, Link } from 'wouter'
 import { Header } from './Header'
 import { Footer } from './Footer'
 import { LandingPage } from '../pages/LandingPage'
@@ -7,6 +7,8 @@ import { Projects } from '../pages/Projects'
 import { NotFound } from '../pages/NotFound'
 import { SiteContext } from '../context/SiteContext'
 import { LangButton } from './LangButton'
+import { BurgerButton } from './BurgerButton'
+import { Logo } from './Logo'
 
 const UI = () => {
   const {
@@ -17,13 +19,23 @@ const UI = () => {
   return (
     <>
       <Header>
-        <LangButton language={language} changeLang={changeLang} />
+        <aside>
+          <Link href='/'>
+            <Logo />
+          </Link>
+        </aside>
+        <nav>
+          <LangButton language={language} changeLang={changeLang} />
+          <BurgerButton />
+        </nav>
       </Header>
-      <Switch>
-        <Route path='/' component={LandingPage} />
-        <Route path='/projects' component={Projects} />
-        <Route path='/:rest*' component={NotFound} />
-      </Switch>
+      <main className='Main'>
+        <Switch>
+          <Route path='/' component={LandingPage} />
+          <Route path='/projects' component={Projects} />
+          <Route path='/:rest*' component={NotFound} />
+        </Switch>
+      </main>
       <Footer />
     </>
   )

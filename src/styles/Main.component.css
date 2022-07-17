@@ -3,6 +3,9 @@
     --mobile-minwidth: 320px;
 
     --brand-color: #00BE9D;
+    --dark-color-1: #1C211B;
+    --dark-color-2: #2A382C;
+    --white-color: #fff;
 }
 
 * {
