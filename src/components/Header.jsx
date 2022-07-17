@@ -2,9 +2,13 @@ import { useContext } from 'react'
 import { SiteContext } from '../context/SiteContext'
 
 const Header = () => {
-  const { language } = useContext(SiteContext)
+  const { language, initialState } = useContext(SiteContext)
+  const { en, es } = initialState.state
+  
   return (
-    <div>Header</div>
+    <header className='Header'>
+      Header
+    </header>
   )
 }
 

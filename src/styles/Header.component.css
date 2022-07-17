@@ -1,0 +1,4 @@
+.Header {
+    width: 100%;
+    min-width: var(--mobile-minwidth);
+}

@@ -6,11 +6,13 @@ import { LandingPage } from '../pages/LandingPage'
 import { Projects } from '../pages/Projects'
 import { NotFound } from '../pages/NotFound'
 import { SiteContext } from '../context/SiteContext'
+import { useInitialState } from '../hooks/useInitialState'
 
 const App = () => {
+  const initialState = useInitialState()
   return (
     <>
-      <SiteContext.Provider value={{ language: 'en' }}>
+      <SiteContext.Provider value={{ language: 'es', initialState: initialState }}>
         <Header />
         <Switch>
           <Route path='/' component={LandingPage} />

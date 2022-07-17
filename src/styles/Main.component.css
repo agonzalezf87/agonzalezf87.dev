@@ -1,5 +1,6 @@
 :root {
     --site-font: 'Ubuntu', sans-serif;
+    --mobile-minwidth: 320px;
 }
 
 * {
@@ -15,4 +16,9 @@ html {
 
 body {
     font-size: 1.6rem;
+}
+
+#root {
+    width: 100vw;
+    min-width: var(--mobile-minwidth);
 }
