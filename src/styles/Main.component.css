@@ -1,6 +1,8 @@
 :root {
     --site-font: 'Ubuntu', sans-serif;
     --mobile-minwidth: 320px;
+
+    --brand-color: #00BE9D;
 }
 
 * {

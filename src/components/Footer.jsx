@@ -1,8 +1,10 @@
-import React from 'react'
+import { useContext } from 'react'
+import { SiteContext } from '../context/SiteContext'
 
 function Footer() {
+  const { language } = useContext(SiteContext)
   return (
-    <div>Footer</div>
+    language === 'en' ? <div>Footer</div> : <div>Pie de Página</div>
   )
 }
 

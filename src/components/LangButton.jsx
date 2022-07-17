@@ -1,19 +1,21 @@
-import { useContext, useState } from 'react'
-import { SiteContext } from '../context/SiteContext'
-import SpainFlag from '../assets/logo-Spain-flag-wave.svg'
-import UsFlag from  '../assets/logo-USA-flag-wave.svg'
+import { useState } from "react"
+import esFlag from '../assets/es-flag.svg'
+import enFlag from '../assets/en-flag.svg'
 
-const LangButton = () => {
-    const { language } = useContext(SiteContext)
-    const [lang, setLang] = useState(language)
-
-    const handleClick = () => {
-        lang === 'es' ? setLang('en') : setLang('es')
+const LangButton = (props) => {
+    const handleChange = (evt) => {
+        props.changeLang(evt.target.value)
     }
 
     return (
-        <div className='LangButton' onClick={handleClick}>
-            <img src={lang === 'en' ? SpainFlag : UsFlag} alt="Language flag" title={lang === 'en' ? 'Cambiar a español' : 'Change to english'} />
+        <div className='LangButton'>
+            <div>
+                <img src={props.language === 'en' ? enFlag : esFlag} alt={`${props.language} flag`} />
+            </div>
+            <select value={props.language} onChange={handleChange}>
+                <option value="es" >ES</option>
+                <option value="en" >EN</option>
+            </select>
         </div>
     )
 }
