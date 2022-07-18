@@ -23,9 +23,7 @@ const UI = () => {
     <>
       <Header>
         <aside>
-          <Link href='/'>
-            <Logo />
-          </Link>
+          <Logo />
         </aside>
         <nav>
           <LangButton language={language} changeLang={changeLang} />
