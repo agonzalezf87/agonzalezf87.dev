@@ -1,7 +1,12 @@
-import '../styles/Hero.component.css'
+import { useContext } from 'react'
+import { SocialLink } from './SocialLink'
+import socialLinks from '../socialLinks'
+import { SiteContext } from '../context/SiteContext'
 import myPhoto from '../assets/mypicture-square.jpg'
+import '../styles/Hero.component.css'
 
 const Hero = () => {
+  const {language} = useContext(SiteContext)
   return (
     <section className="Hero">
       <div className="Hero__card">
@@ -15,7 +20,9 @@ const Hero = () => {
           <p>Frontend Developer</p>
         </div>
         <div className="Hero__card__socialLinks">
-          Links...
+          {socialLinks.map(link => (
+            <SocialLink key={link.id} url={link.url} alt={language === 'es' ? link.esAlt : link.enAlt} icon={link.icon}/>
+          ))}
         </div>
       </div>
     </section>

@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom'
 import { SiteContext } from '../context/SiteContext'
 import { Link } from 'wouter'
 import '../styles/MenuModal.component.css'
-import initialState from '../initialState'
+import languageSet from '../languages'
 
 const MenuModal = (props) => {
-  const [en, es] = initialState
+  const [en, es] = languageSet
   const { language, openMenu } = useContext(SiteContext)
 
   const handleClick = () => {
