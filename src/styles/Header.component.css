@@ -1,16 +1,20 @@
 .Header {
     position: fixed;
     width: 100%;
-    min-width: var(--mobile-minwidth);
     height: 62px;
     left: 0px;
     top: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 15px;
     background-color: var(--dark-color-1);
     color: var(--brand-color);
+}
+
+.Header__container {
+    width: 100%;
+    min-width: var(--mobile-minwidth);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .Header nav, .Header aside {

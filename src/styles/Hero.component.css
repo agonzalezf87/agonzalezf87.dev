@@ -2,7 +2,7 @@
     padding: 0 15px;
     width: 100%;
     min-width: 320px;
-    min-height: 658px;
+    min-height: 587px;
     margin-top: var(--top-margin);
     background: url(../assets/code_cover.jpg) no-repeat;
     background-size: cover;
@@ -16,6 +16,7 @@
     height: 277px;
     border-radius: 15px;
     background-color: var(--dark-color-1);
+    box-shadow: 1px 1px 4px 5px rgba(0, 0, 0, 0.35);
     color: var(--white-color);
     display: flex;
     flex-direction: column;
@@ -44,12 +45,14 @@
     letter-spacing: -0.05em;
     font-weight: 700;
     margin-bottom: 8px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);;
 }
 
 .Hero__card__subtitle {
     bottom: 98px;
     font-size: 2rem;
     line-height: 1.8rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);;
 }
 
 .Hero__card__socialLinks {
@@ -68,7 +71,10 @@
     border-radius: 50%;
     padding: 4px;
     font-size: 2rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 .Hero__card__socialLinks a:hover, .Hero__card__socialLinks a:active {
