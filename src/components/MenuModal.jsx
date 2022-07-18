@@ -19,14 +19,14 @@ const MenuModal = (props) => {
         {language === 'en' && (
           en.Modal.map(key => (
             <li key={key.text}>
-              <Link href={key.src} onClick={handleClick}>{key.text}</Link>
+              <a href={key.src} onClick={handleClick}>{key.text}</a>
             </li>
           ))
         )}
         {language === 'es' && (
           es.Modal.map(key => (
             <li key={key.text}>
-              <Link href={key.src} onClick={handleClick}>{key.text}</Link>
+              <a href={key.src} onClick={handleClick}>{key.text}</a>
             </li>
           ))
         )}

@@ -3,7 +3,7 @@ export default [
     Modal: [
       {
         text: "Home",
-        src: "/#root"
+        src: "/#top"
       },
       {
         text: "About Me",
@@ -26,12 +26,17 @@ export default [
         src: "/#Contact"
       }
     ],
+    Footer: [
+      {
+        text: "All Rights Reserved",
+      }
+    ],
   },
   {
     Modal: [
       {
         text: "Inicio",
-        src: "/#root"
+        src: "/#top"
       },
       {
         text: "Acerca de Mi",
@@ -52,6 +57,11 @@ export default [
       {
         text: "Contáctame",
         src: "/#Contact"
+      }
+    ],
+    Footer: [
+      {
+        text: "Todos los Derechos Reservados",
       }
     ],
   }

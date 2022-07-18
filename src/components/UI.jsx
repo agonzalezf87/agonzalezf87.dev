@@ -40,7 +40,7 @@ const UI = () => {
           <MenuModal setOpenMenu={setOpenMenu}/>
         )}
       </main>
-      <Footer />
+      <Footer language={language}/>
     </>
   )
 }

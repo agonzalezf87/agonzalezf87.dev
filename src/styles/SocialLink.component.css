@@ -1,0 +1,19 @@
+.SocialLink {
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--white-color);
+    border-radius: 50%;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.SocialLink:hover, .SocialLink:active {
+    background-color: var(--brand-color);
+}
+
+.SocialLink .fa-brands {
+    color: var(--white-color);
+}
