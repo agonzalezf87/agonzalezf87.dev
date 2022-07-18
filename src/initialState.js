@@ -6,7 +6,7 @@ export default [
         src: "/#root"
       },
       {
-        text: "Aboout Me",
+        text: "About Me",
         src: "/#about"
       },
       {

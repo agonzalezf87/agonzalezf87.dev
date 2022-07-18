@@ -1,9 +1,9 @@
-import { Hero } from "./Hero"
+import { Hero } from "../components/Hero"
 
 const LandingPage = () => {
-    return (
-        <Hero />
-    )
+  return (
+    <Hero />
+  )
 }
 
 export { LandingPage }
