@@ -20,20 +20,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .Hero__card__image {
-    position: relative;
-    top: -110px;
-    left: 29px;
     width: 220px;
     height: 220px;
     border-radius: 50%;
     border: solid 10px var(--brand-color);
-    z-index: 98;
-    align-self: flex-start;
-    justify-self: flex-start;
+    justify-self: baseline;
+    margin-top: -160px;
+    margin-bottom: 30px;
 }
 
 .Hero__card__image img {
@@ -42,23 +39,20 @@
 }
 
 .Hero__card__title {
-    position: relative;
-    bottom: 102px;
-    font-size: 3.2rem;
-    line-height: 3.7rem;
+    font-size: 3rem;
+    line-height: 2.8rem;
     letter-spacing: -0.05em;
     font-weight: 700;
+    margin-bottom: 8px;
 }
 
 .Hero__card__subtitle {
-    position: relative;
     bottom: 98px;
     font-size: 2rem;
-    line-height: 2.3rem;
+    line-height: 1.8rem;
 }
 
 .Hero__card__socialLinks {
-    position: relative;
-    bottom: 50px;
+    margin-top: 30px;
     font-size: 1.8rem;
 }
