@@ -1,6 +1,7 @@
 :root {
   --site-font: 'Ubuntu', sans-serif;
   --mobile-minwidth: 320px;
+  --mobile-maxwidth: 468px;
   --mobile-paddingx: 0 15px;
   --top-margin: 62px;
   --sections-padding: 60px;
@@ -30,6 +31,6 @@ body {
 }
 
 #root {
-  width: 100vw;
+  max-width: 468px;
   min-width: var(--mobile-minwidth);
 }
