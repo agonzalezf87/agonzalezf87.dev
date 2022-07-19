@@ -1,14 +1,14 @@
 import React, { useContext } from 'react'
-import { Route, Switch, Link } from 'wouter'
+import { Route, Switch } from 'wouter'
 import { Header } from './Header'
 import { Footer } from './Footer'
 import { LandingPage } from '../pages/LandingPage'
 import { Projects } from '../pages/Projects'
 import { NotFound } from '../pages/NotFound'
 import { SiteContext } from '../context/SiteContext'
-import { LangButton } from './LangButton'
-import { BurgerButton } from './BurgerButton'
-import { Logo } from './Logo'
+import { LangButton } from './Header/LangButton'
+import { BurgerButton } from './Header/BurgerButton'
+import { Logo } from './Header/Logo'
 import { MenuModal } from './MenuModal'
 
 const UI = () => {
