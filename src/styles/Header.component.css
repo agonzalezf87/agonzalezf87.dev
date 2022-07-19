@@ -1,5 +1,5 @@
 .Header {
-  width: var(--mobile-maxwidth);
+  width: 100%;
   min-width: var(--mobile-minwidth);
   position: fixed;
   height: 62px;
@@ -22,75 +22,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.Logo {
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3.2rem;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.Logo img {
-  width: 48px;
-  height: 48px;
-}
-
-.Logo span {
-  display: none;
-}
-
-.LangButton {
-  width: 120px;
-  display: flex;
-  align-items: center;
-}
-
-.LangButton div {
-  width: 48px;
-  height: 36px;
-  padding: 8px 9px;
-  background-color: var(--brand-color);
-  border-radius: 5px 0 0 5px ;
-}
-
-.LangButton div img {
-  height: 20px;
-}
-
-.LangButton select {
-  height: 36px;
-  font-family: var(--site-font);
-  padding: 8px;
-  border: none;
-  background-color: var(--brand-color);
-  color: var(--white-color);
-  font-weight: medium;
-  border-radius: 0 5px 5px 0;
-  box-shadow: 0 0 1px rgb(145, 145, 145);
-  outline: none;
-}
-
-.BurgerButton {
-  cursor: pointer;
-  width: 48px;
-  height: 36px;
-  background-color: var(--brand-color);
-  border-radius: 6px;
-  color: var(--white-color);
-  text-align: center;
-}
-
-.BurgerButton.active {
-  background-color: var(--brand-color-active);
-}
-
-.BurgerButton svg {
-  fill: var(--white-color);
-  font-size: 36px;
 }
 
 @media screen and (min-width: 480px){

@@ -1,4 +1,5 @@
 import brandLogo from '../../assets/logo.png'
+import '../../styles/Logo.component.css'
 
 const Logo = () => {
   return (

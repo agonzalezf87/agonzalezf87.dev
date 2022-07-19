@@ -1,5 +1,6 @@
 import esFlag from '../../assets/es-flag.svg'
 import enFlag from '../../assets/en-flag.svg'
+import '../../styles/LangButton.component.css'
 
 const LangButton = (props) => {
     const handleChange = (evt) => {

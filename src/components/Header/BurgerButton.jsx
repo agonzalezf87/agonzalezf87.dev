@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import { SiteContext } from '../../context/SiteContext'
 import { MdMenu, MdClose } from 'react-icons/md'
+import '../../styles/BurgerButton.component.css'
 
 const BurgerButton = (props) => {
   const { openMenu } = useContext(SiteContext)

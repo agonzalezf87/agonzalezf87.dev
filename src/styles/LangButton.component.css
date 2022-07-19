@@ -1,0 +1,30 @@
+.LangButton {
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.LangButton div {
+  width: 48px;
+  height: 36px;
+  padding: 8px 9px;
+  background-color: var(--brand-color);
+  border-radius: 5px 0 0 5px ;
+}
+
+.LangButton div img {
+  height: 20px;
+}
+
+.LangButton select {
+  height: 36px;
+  font-family: var(--site-font);
+  padding: 8px;
+  border: none;
+  background-color: var(--brand-color);
+  color: var(--white-color);
+  font-weight: medium;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0 0 1px rgb(145, 145, 145);
+  outline: none;
+}
