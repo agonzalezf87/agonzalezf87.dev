@@ -1,4 +1,5 @@
 .Header {
+  min-width: var(--mobile-minwidth);
   position: fixed;
   width: 100%;
   height: 62px;
@@ -7,11 +8,11 @@
   padding: 0 15px;
   background-color: var(--dark-color-1);
   color: var(--brand-color);
+  box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.3);
 }
 
 .Header__container {
   width: 100%;
-  min-width: var(--mobile-minwidth);
   display: flex;
   justify-content: space-between;
   align-items: center;

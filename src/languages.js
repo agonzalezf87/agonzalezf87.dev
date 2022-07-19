@@ -3,11 +3,11 @@ export default [
     Modal: [
       {
         text: "Home",
-        src: "/#top"
+        src: "/#Top"
       },
       {
         text: "About Me",
-        src: "/#about"
+        src: "/#About"
       },
       {
         text: "My Skills",
@@ -36,11 +36,11 @@ export default [
     Modal: [
       {
         text: "Inicio",
-        src: "/#top"
+        src: "/#Top"
       },
       {
         text: "Acerca de Mi",
-        src: "/#about"
+        src: "/#About"
       },
       {
         text: "Mis Habilidades",

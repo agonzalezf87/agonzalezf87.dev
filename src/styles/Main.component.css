@@ -1,14 +1,16 @@
 :root {
   --site-font: 'Ubuntu', sans-serif;
   --mobile-minwidth: 320px;
-  --mobile-padding: 0 15px;
+  --mobile-paddingx: 0 15px;
   --top-margin: 62px;
+  --sections-padding: 60px;
 
   --brand-color: #00BE9D;
   --brand-color-active: #7fc7bb;
   --dark-color-1: #1C211B;
   --dark-color-2: #2A382C;
   --white-color: #fff;
+  --gray-color: #4e4e4e;
 }
 
 * {
@@ -29,5 +31,5 @@ body {
 
 #root {
   width: 100vw;
-    min-width: var(--mobile-minwidth);
+  min-width: var(--mobile-minwidth);
 }

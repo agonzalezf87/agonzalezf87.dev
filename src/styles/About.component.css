@@ -1,0 +1,8 @@
+.About {
+  background-color: var(--dark-color-1);
+  min-height: 587px;
+  color: var(--white-color);
+  padding: 60px 15px;
+  display: flex;
+  justify-content: center;
+}

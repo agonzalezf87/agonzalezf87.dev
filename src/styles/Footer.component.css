@@ -2,9 +2,10 @@
   width: 100%;
   min-height: 172px;
   min-width: var(--mobile-minwidth);
-  background-color: var(--dark-color-1);
+  background-color: var(--dark-color-2);
   color: var(--white-color);
   padding: var(--mobile-padding);
+  border-top: 1px solid rgba(78,78,78,.5);
 }
 
 .Footer p {
@@ -31,7 +32,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  margin-top: -20px;
+  margin-top: -21px;
 }
 
 .Footer__social {

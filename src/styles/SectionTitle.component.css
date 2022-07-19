@@ -1,0 +1,41 @@
+.SectionTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.SectionTitle__logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  background-color: var(--dark-color-2);
+  font-size: 48px;
+  line-height: 46px;
+  padding: 11px;
+  box-shadow: 0 0 2px 3px rgba(0,0,0,0.25);
+}
+
+.SectionTitle__logo--variant {
+  background-color: var(--dark-color-1);
+}
+
+.SectionTitle__text {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+  margin: 8px 0 16px;
+}
+
+.SectionTitle__under {
+  width: 80px;
+  height: 2px;
+  background-color: var(--brand-color);
+  margin-bottom: 8px;
+}
+
+.SectionTitle__under:last-child {
+  width: 40px;
+}
