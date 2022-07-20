@@ -6,7 +6,7 @@
   left: 0px;
   top: 0px;
   padding: 0 15px;
-  background-color: var(--dark-color-1);
+  background-color: var(--dark-color-2);
   color: var(--brand-color);
   box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.3);
 }

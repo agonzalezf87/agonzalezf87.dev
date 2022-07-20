@@ -9,7 +9,7 @@ function Footer({language}) {
     <footer className='Footer'>
       <section className="Footer__container">
         <div className="Footer__topBtn">
-          <a href="/#top"><i className="fa-solid fa-arrow-up"></i></a>
+          <a href="/#Top"><i className="fa-solid fa-arrow-up"></i></a>
         </div>
         <div className="Footer__social">
           {socialLinks.map(link => (

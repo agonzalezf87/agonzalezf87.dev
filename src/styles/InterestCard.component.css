@@ -1,0 +1,15 @@
+.InterestCard {
+  background-color: var(--dark-color-2);
+  border-radius: 5px;
+  width: 135px;
+  height: 80px;
+}
+
+.InterestCard__icon {
+  width: 28px;
+  height: 28px;
+}
+
+.InterestCard__text {
+  text-transform: uppercase;
+}

@@ -4,5 +4,72 @@
   color: var(--white-color);
   padding: 60px 15px;
   display: flex;
+  flex-wrap: wrap;
+}
+
+.About a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.About a:hover, a:active {
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+
+.section__row {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.section__row__title {
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 2rem;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  text-align: justify;
+  padding: 0 5px;
+}
+
+.description span {
+  color: var(--brand-color);
+  font-weight: 700;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
+  width: 100%;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  letter-spacing: -.1rem;
+}
+
+.details__column:first-child {
+  width: max-content;
+  color: var(--brand-color);
+  font-weight: 700;
+  margin-right: 15px;
+  letter-spacing: normal;
+}
+
+.details__column div {
+  height: 24px;
+}
+
+@media screen and (min-width: 400px) {
+  .details {
+    font-size: 1.8rem;
+    letter-spacing: normal;
+  }
 }

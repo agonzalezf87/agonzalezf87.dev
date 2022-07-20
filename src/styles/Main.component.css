@@ -28,6 +28,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  background-color: var( --dark-color-2);
 }
 
 #root {
