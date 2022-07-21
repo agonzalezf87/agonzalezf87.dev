@@ -22,6 +22,12 @@
   padding-bottom: 30px;
 }
 
+.section__row--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .section__row__title {
   font-weight: 700;
   font-size: 2.2rem;

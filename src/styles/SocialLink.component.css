@@ -10,8 +10,12 @@
     text-decoration: none;
 }
 
-.SocialLink:hover, .SocialLink:active {
+.SocialLink:hover {
     background-color: var(--brand-color);
+}
+
+.SocialLink:active {
+    background-color: var(--brand-color-active);
 }
 
 .SocialLink .fa-brands {

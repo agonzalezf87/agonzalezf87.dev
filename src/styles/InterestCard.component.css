@@ -13,9 +13,8 @@
   flex-grow: 1;
 }
 
-.blank {
-  background-color: var(--dark-color-1);
-  box-shadow: none;
+.InterestCard:hover, .InterestCard:active {
+  box-shadow: 0 0 4px 2px var(--brand-color-active);
 }
 
 .InterestCard__icon {

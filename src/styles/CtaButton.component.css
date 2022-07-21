@@ -1,0 +1,25 @@
+.CtaButton {
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  font-weight: 600;
+  text-shadow: 1px 1px rgba(0, 0, 0, .3);
+  border: 1px solid var(--white-color);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.CtaButton:hover {
+  background-color: var(--brand-color);
+}
+
+.CtaButton:active {
+  background-color: var(--brand-color-active);
+}
+
+.CtaButton svg {
+  margin-left: 15px;
+}

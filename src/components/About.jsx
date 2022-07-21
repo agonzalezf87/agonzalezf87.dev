@@ -1,5 +1,6 @@
 import { useContext } from 'react'
 import { SectionTitle } from './SectionTitle'
+import { CtaButton } from './CtaButton'
 import { SiteContext } from '../context/SiteContext'
 
 const personalDetails = [
@@ -50,6 +51,9 @@ const About = ({children}) => {
         <div className="section__row">
           <h2 className="section__row__title">{language === 'en' ? 'My Interests' : 'Mis Gustos'}</h2>
           {children}
+        </div>
+        <div className="section__row--center">
+          <CtaButton />
         </div>
       </div>
     </section>
