@@ -22,7 +22,7 @@
   padding-bottom: 30px;
 }
 
-.section__row--center {
+.center {
   display: flex;
   justify-content: center;
   align-items: center;

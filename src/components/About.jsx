@@ -52,9 +52,9 @@ const About = ({children}) => {
           <h2 className="section__row__title">{language === 'en' ? 'My Interests' : 'Mis Gustos'}</h2>
           {children}
         </div>
-        <div className="section__row--center">
-          <CtaButton />
-        </div>
+      </div>
+      <div className="section__row center">
+        <CtaButton ctaType='file'/>
       </div>
     </section>
   )

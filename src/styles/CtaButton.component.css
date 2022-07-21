@@ -1,8 +1,9 @@
 .CtaButton {
   cursor: pointer;
-  width: 200px;
+  width: 220px;
   height: 50px;
   font-weight: 600;
+  font-size: 1.8rem;
   text-shadow: 1px 1px rgba(0, 0, 0, .3);
   border: 1px solid var(--white-color);
   border-radius: 5px;
@@ -21,5 +22,7 @@
 }
 
 .CtaButton svg {
+  width: 24px;
+  height: 24px;
   margin-left: 15px;
 }
