@@ -7,7 +7,7 @@ function Footer({language}) {
   const [en, es] = languageSet
   return (
     <footer className='Footer'>
-      <section className="Footer__container">
+      <div className="Footer__container">
         <div className="Footer__topBtn">
           <a href="/#Top"><i className="fa-solid fa-arrow-up"></i></a>
         </div>
@@ -20,7 +20,7 @@ function Footer({language}) {
           <p>© 2022 <span>Antonio Gonzalez</span></p>
           <p>{language === 'es' ? es.Footer[0].text : en.Footer[0].text}</p>
         </div>
-      </section>
+      </div>
     </footer>
   )
 }

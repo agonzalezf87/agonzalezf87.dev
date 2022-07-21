@@ -17,27 +17,31 @@ const Skills = () => {
         <div className="section__row__title">
           <h2>{language === "en" ? "Technical Skills" : "Habilidades Técnicas"}</h2>
         </div>
-        <Tag text='JavaScript' />
-        <Tag text='JavaScript' />
-        <Tag text='JavaScript' />
-        <Tag text='JavaScript' />
-        <Tag text='JavaScript' />
-        <Tag text='JavaScript' />
-        <Tag text='JavaScript' />
-        <Tag text='JavaScript' />
+        <div className="tags">
+          <Tag text='JavaScript' />
+          <Tag text='JavaScript' />
+          <Tag text='JavaScript' />
+          <Tag text='JavaScript' />
+          <Tag text='JavaScript' />
+          <Tag text='JavaScript' />
+          <Tag text='JavaScript' />
+          <Tag text='JavaScript' />
+        </div>
       </div>
       <div className='section__row'>
         <div className="section__row__title">
           <h2>{language === "en" ? "Soft Skills" : "Habilidades Blandas"}</h2>
         </div>
-        <Tag text='JavaScript' />
-        <Tag text='JavaScript' />
-        <Tag text='JavaScript' />
-        <Tag text='JavaScript' />
-        <Tag text='JavaScript' />
-        <Tag text='JavaScript' />
-        <Tag text='JavaScript' />
-        <Tag text='JavaScript' />
+        <div className="tags">
+          <Tag text='JavaScript' />
+          <Tag text='JavaScript' />
+          <Tag text='JavaScript' />
+          <Tag text='JavaScript' />
+          <Tag text='JavaScript' />
+          <Tag text='JavaScript' />
+          <Tag text='JavaScript' />
+          <Tag text='JavaScript' />
+        </div>
       </div>
     </section>
   )

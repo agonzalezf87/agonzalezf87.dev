@@ -57,8 +57,11 @@ section {
 
 .section__row__title {
   width: 100%;
+  margin-bottom: 15px;
+}
+
+.section__row__title h2 {
   font-weight: 700;
   font-size: 2.2rem;
-  line-height: 2rem;
-  margin-bottom: 15px;
+  line-height: 2.4rem;
 }

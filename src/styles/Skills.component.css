@@ -1,13 +1,8 @@
-.Skills .section__row {
-  width: 100%;
+.tags {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 1fr;
   row-gap: 10px;
   column-gap: 10px;
-}
-
-.Skills .section__row__title {
-  grid-column-start: 1;
-  grid-column-end: 3;
+  justify-items: center;
 }

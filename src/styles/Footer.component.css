@@ -1,6 +1,6 @@
 .Footer {
   width: 100%;
-  min-height: 172px;
+  height: 172px;
   min-width: var(--mobile-minwidth);
   background-color: var(--dark-color-2);
   color: var(--white-color);
@@ -18,7 +18,7 @@
 }
 
 .Footer__container {
-  min-height: 172px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
