@@ -1,3 +1,4 @@
+import '../../styles/Interests.component.css'
 import { InterestCard } from "./InterestCard"
 
 const Interests = () => {
@@ -6,6 +7,7 @@ const Interests = () => {
         <InterestCard text='Music'/>
         <InterestCard text='Music'/>
         <InterestCard text='Music'/>
+        <InterestCard text='Music' isBlank={true}/>
     </div>
   )
 }

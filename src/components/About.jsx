@@ -4,9 +4,8 @@ import { SiteContext } from '../context/SiteContext'
 
 const personalDetails = [
   {
-    phone: "tel:+522292509350",
+    phone: "tel:+52 2292509350",
     email: "mailto:agonzalezf87@gmail.com",
-    website: "http://antoniogonzalez.dev",
     address: "Juarez, NL, Mexico",
     jobStatus: "freelance"
   }
@@ -31,9 +30,8 @@ const About = ({children}) => {
             <div className="details__column">
               <div>{language === 'en' ? 'Phone' : 'Teléfono'}</div>
               <div>{language === 'en' ? 'E-Mail' : 'Correo-e'}</div>
-              <div>{language === 'en' ? 'Website' : 'Sitio Web'}</div>
               <div>{language === 'en' ? 'Address' : 'Dirección'}</div>
-              <div>{language === 'en' ? 'Job Satus' : 'Disponibilidad'}</div>
+              <div>{language === 'en' ? 'Job Satus' : 'Dis. Laboral'}</div>
             </div>
               {personalDetails.map(key => (
                 <div key="details__column" className="details__column">
@@ -42,9 +40,6 @@ const About = ({children}) => {
                   </div>
                   <div key={key.email}>
                     <a href={key.email} alt={language === 'en' ? "E-mail" : 'Correo Electrónico'}>{key.email.split(':')[1]}</a>
-                  </div>
-                  <div key={key.website}>
-                    <a href={key.website} alt={language === 'en' ? "Web Site" : 'Sitio Web'} target="_blank">{key.website.split('//')[1]}</a>
                   </div>
                   <div key={key.address}>{key.address}</div>
                   <div key={key.jobStatus}><span>{key.jobStatus}</span></div>
