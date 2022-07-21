@@ -1,10 +1,13 @@
 import '../styles/SectionTitle.component.css'
+import { FcInfo, FcSupport} from 'react-icons/fc'
 
-const SectionTitle = (props) => {
+const SectionTitle = ({text, icon, variant}) => {
   return (
     <div className="SectionTitle">
-      <div className="SectionTitle__logo"><i className={`fa-solid ${props.icon}`}></i></div>
-      <div className="SectionTitle__text">{props.text}</div>
+      <div className={!!variant ? "SectionTitle__logo variant" : "SectionTitle__logo"}>
+        {icon === 'info' ? <FcInfo /> : <FcSupport />}
+      </div>
+      <div className="SectionTitle__text">{text}</div>
       <div className="SectionTitle__under"></div>
       <div className="SectionTitle__under"></div>
     </div>

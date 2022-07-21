@@ -1,0 +1,11 @@
+.Tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: var(--brand-color);
+  width: 140px;
+  height: 40px;
+  border-radius: 25px;
+}

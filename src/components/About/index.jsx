@@ -1,7 +1,9 @@
 import { useContext } from 'react'
-import { SectionTitle } from './SectionTitle'
-import { CtaButton } from './CtaButton'
-import { SiteContext } from '../context/SiteContext'
+import { Interests } from './Interests'
+import { SectionTitle } from '../SectionTitle'
+import { CtaButton } from '../CtaButton'
+import { SiteContext } from '../../context/SiteContext'
+import '../../styles/About.component.css'
 
 const personalDetails = [
   {
@@ -12,14 +14,15 @@ const personalDetails = [
   }
 ]
 
-const About = ({children}) => {
+const About = () => {
   const {language} = useContext(SiteContext)
 
   return (
     <section className="About" id="About">
       <SectionTitle 
         text={language === "en" ? "About Me" : "Acerca de Mí"}
-        icon='fa-circle-info'
+        icon='info'
+        variant={false}
       />
       <div className="section__row">
         <p className="description"><span>{language === "en" ? "Hello! I'm Antonio" : "Hola! Me llamo Antonio"}.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis ornare purus. Morbi luctus tortor nunc, vitae posuere nibh malesuada sed. In nec tortor eu nibh tristique vehicula sed in lectus. Phasellus vitae accumsan tortor. Fusce ac vestibulum ante.</p>
@@ -50,7 +53,7 @@ const About = ({children}) => {
         </div>
         <div className="section__row">
           <h2 className="section__row__title">{language === 'en' ? 'My Interests' : 'Mis Gustos'}</h2>
-          {children}
+          <Interests />
         </div>
       </div>
       <div className="section__row center">

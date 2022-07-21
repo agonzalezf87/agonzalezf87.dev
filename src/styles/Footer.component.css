@@ -18,10 +18,12 @@
 }
 
 .Footer__container {
+  min-height: 172px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 
 .Footer__topBtn {
@@ -32,7 +34,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  margin-top: -21px;
+  margin-top: -35px;
 }
 
 .Footer__social {

@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { Route, Switch } from 'wouter'
-import { Header } from '../components/Header'
+import { Header } from '../components/Header/index'
 import { Footer } from '../components/Footer'
 import { LandingPage } from '../pages/LandingPage'
 import { Projects } from '../pages/Projects'

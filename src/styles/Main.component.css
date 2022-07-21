@@ -35,3 +35,30 @@ body {
   max-width: 468px;
   min-width: var(--mobile-minwidth);
 }
+
+section {
+  min-height: 587px;
+  padding: 60px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--white-color);
+}
+
+.section__row {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__row__title {
+  width: 100%;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 2rem;
+  margin-bottom: 15px;
+}
