@@ -1,14 +1,16 @@
 import '../../styles/InterestCard.component.css'
-import { FaHeadphones } from 'react-icons/fa'
+import { FaHeadphones, FaGamepad, FaDumbbell, FaLaptopCode, FaHamburger, FaMicrochip} from 'react-icons/fa'
 
 const InterestCard = (props) => {
   return (
-    <div className={!props.isBlank ? 'InterestCard' : 'InterestCard blank'}>
+    <div className="InterestCard">
       <div className="InterestCard__icon">
-        {props.isBlank ? ' ' : <FaHeadphones/>}
+        {
+          props.icon === 'music' ? <FaHeadphones /> : props.icon === 'webdev' ? <FaLaptopCode /> : props.icon === 'nintendo' ? <FaGamepad /> : props.icon === 'gym' ? <FaDumbbell /> : props.icon === 'tech' ? <FaMicrochip /> : <FaHamburger />
+        }
       </div>
       <div className="InterestCard__text">
-        {props.isBlank ? ' ' : props.text}
+        {props.text === 'nintendo' ? `${props.text}™` : props.text}
       </div>
     </div>
   )
