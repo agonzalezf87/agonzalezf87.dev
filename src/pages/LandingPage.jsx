@@ -1,6 +1,7 @@
 import { Hero } from "../components/Hero"
 import { About } from "../components/About/index"
-import { Skills } from "../components/Skills/index.jsx"
+import { Skills } from "../components/Skills/"
+import { Resume } from "../components/Resume/"
 import '../styles/About.component.css'
 
 const LandingPage = () => {
@@ -9,6 +10,7 @@ const LandingPage = () => {
       <Hero />
       <About />
       <Skills />
+      <Resume />
     </>
   )
 }

@@ -21,7 +21,7 @@ const About = () => {
     <section className="About" id="About">
       <SectionTitle 
         text={language === "en" ? "About Me" : "Acerca de Mí"}
-        icon='info'
+        icon='inf'
         variant={false}
       />
       <div className="section__row">
@@ -35,7 +35,7 @@ const About = () => {
               <div>{language === 'en' ? 'Phone' : 'Teléfono'}</div>
               <div>{language === 'en' ? 'E-Mail' : 'Correo-e'}</div>
               <div>{language === 'en' ? 'Address' : 'Dirección'}</div>
-              <div>{language === 'en' ? 'Job Satus' : 'Dis. Laboral'}</div>
+              <div>{language === 'en' ? 'Job Satus' : 'Disp. Laboral'}</div>
             </div>
               {personalDetails.map(key => (
                 <div key="details__column" className="details__column">
