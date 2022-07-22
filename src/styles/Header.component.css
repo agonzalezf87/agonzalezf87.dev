@@ -5,6 +5,7 @@
   height: 62px;
   left: 0px;
   top: 0px;
+  z-index: 99;
   padding: 0 15px;
   background-color: var(--dark-color-2);
   color: var(--brand-color);

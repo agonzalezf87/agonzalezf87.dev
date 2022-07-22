@@ -1,0 +1,77 @@
+.ResItemCard {
+  position: relative;
+  width: calc(100% - 40px);
+  max-height: 330px;
+  border-right: 2px solid var(--brand-color);
+  padding: 10px;
+  background-color: var(--dark-color-2);
+  border-radius: 0 5px 5px 0;
+  z-index: 97;
+}
+
+.ResItemCard:not(div:last-child) {
+  margin-bottom: 15px;
+}
+
+.ResItemCard::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: -38px;
+  width: 35px;
+  border: 1px solid var(--brand-color);
+  z-index: 98;
+}
+
+.ResItemCard::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 47.5%;
+  width: 12px;
+  height: 12px;
+  right: -49px;
+  background-color: var(--brand-color);
+  border-radius: 10px;
+  z-index: 96;
+}
+
+.Resume__wrapper--right .ResItemCard {
+  border-right: none;
+  border-left: 2px solid var(--brand-color);
+  border-radius: 5px  0 0 5px;
+}
+
+.Resume__wrapper--right .ResItemCard::before {
+  left: -38px;
+}
+
+.Resume__wrapper--right .ResItemCard::after {
+  left: -49px;
+}
+
+.ResItemCard__title {
+  margin-bottom: 10px;
+}
+
+.ResItemCard__title span {
+  font-size: 1.8rem;
+  color: var(--brand-color);
+}
+
+.ResItemCard__location, .ResItemCard__dates, .ResItemCard__text {
+  font-size: 1.4rem;
+}
+
+.ResItemCard__location {
+  text-transform: uppercase;
+}
+
+.ResItemCard__dates {
+  margin-bottom: 10px;
+}
+
+.ResItemCard__text {
+  white-space: break-spaces;
+}
