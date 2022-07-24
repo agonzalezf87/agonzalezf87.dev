@@ -53,7 +53,7 @@ const About = ({language}) => {
         </div>
       </div>
       <div className="section__row center">
-        <CtaButton ctaType='file' title={language === 'en' ? 'Descargar CV' : 'Más Proyectos'}/>
+        <CtaButton ctaType='file' title={language === 'en' ? 'Download CV' : 'Descargar CV'}/>
       </div>
     </section>
   )

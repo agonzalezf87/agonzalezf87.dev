@@ -2,25 +2,24 @@ import { MdSimCardDownload, MdSend, MdOutlineLaunch} from 'react-icons/md'
 import '../styles/CtaButton.component.css'
 
 const CtaButton = ({ctaType, title}) => {
-  switch(ctaType) {
-    case 'file':
-      return (
-        <div className='CtaButton'>
-          {title} <MdSimCardDownload />
-        </div>
-      )
-    case 'message':
-      return (
-        <div className='CtaButton'>
-          {title} <MdSend />
-        </div>
-      )
-    case 'link':
-      return (
-        <div className='CtaButton'>
-          {title} <MdOutlineLaunch />
-        </div>
-      )
+  if(ctaType === 'file') {
+    return(
+      <button className='CtaButton'>
+        {title} <MdSimCardDownload />
+      </button>
+    )
+  } else if(ctaType === 'open') {
+    return(
+      <button className='CtaButton'>
+        {title} <MdOutlineLaunch />
+      </button>
+    )
+  } else {
+    return(
+      <button className='CtaButton'>
+        {title} <MdSend />
+      </button>
+    )
   }
 }
 
