@@ -47,7 +47,15 @@
 }
 
 .details__column div {
-  height: 24px;
+  height: 32px;
+}
+
+.details__column span {
+  background-color: var(--brand-color);
+  padding: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 400px) {

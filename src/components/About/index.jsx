@@ -1,8 +1,6 @@
-import { useContext } from 'react'
 import { Interests } from './Interests'
 import { SectionTitle } from '../SectionTitle'
 import { CtaButton } from '../CtaButton'
-import { SiteContext } from '../../context/SiteContext'
 import '../../styles/About.component.css'
 
 const personalDetails = [
@@ -14,9 +12,7 @@ const personalDetails = [
   }
 ]
 
-const About = () => {
-  const {language} = useContext(SiteContext)
-
+const About = ({language}) => {
   return (
     <section className="About" id="About">
       <SectionTitle 

@@ -1,11 +1,8 @@
-import { useContext } from 'react'
 import { SectionTitle } from '../SectionTitle'
-import { SiteContext } from '../../context/SiteContext'
 import { Tag } from "./Tag"
 import '../../styles/Skills.component.css'
 
-const Skills = () => {
-  const {language} = useContext(SiteContext)
+const Skills = ({language}) => {
   return (
     <section className="Skills" id="Skills">
       <SectionTitle 

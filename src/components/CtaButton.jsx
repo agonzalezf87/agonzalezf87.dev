@@ -1,9 +1,9 @@
 import { useContext} from 'react'
 import { SiteContext } from '../context/SiteContext'
-import { MdSimCardDownload, MdSend} from 'react-icons/md'
+import { MdSimCardDownload, MdSend, MdOutlineLaunch} from 'react-icons/md'
 import '../styles/CtaButton.component.css'
 
-const CtaButton = ({ctaType}) => {
+const CtaButton = ({ctaType, title}) => {
   const { language } = useContext(SiteContext)
   switch(language) {
     case 'en':

@@ -1,0 +1,11 @@
+.ProjectCard {
+  width: 290px;
+  height: 260px;
+  border: 1px solid var(--white-color);
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.ProjectCard:not(div:last-child) {
+  margin-bottom: 15px;
+}
