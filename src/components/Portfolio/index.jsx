@@ -5,14 +5,14 @@ import '../../styles/Portfolio.component.css'
 
 const projects = [
   {
-    id: 1,
-    title: "twitter",
+    id: 'twitter',
+    title: "twitter clone",
     url: "https://agonzalezf87.github.io/twitterclone/",
     technologies: ['html', 'css']
   },
   {
-    id: 2,
-    title: "wordle",
+    id: 'wordle',
+    title: "wordle js",
     url: "https://agonzalezf87.github.io/wordle/",
     technologies: ['html', 'css', 'js']
   },
@@ -28,7 +28,7 @@ const Portfolio = ({language}) => {
       />
       <div className="section__row">
         {projects.map(project => (
-          <ProjectCard key={project.id} title={project.title} url={project.url} technologies={project.technologies} />
+          <ProjectCard key={project.id} id={project.id} title={project.title} url={project.url} technologies={project.technologies} />
         ))}
         <CtaButton ctaType='link' title={language === 'en' ? 'More Projects' : 'Más Proyectos'}/>
       </div>
