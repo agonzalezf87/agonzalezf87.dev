@@ -1,4 +1,6 @@
 import { SectionTitle } from "../SectionTitle"
+import { ContactForm } from "../ContactForm"
+import "../../styles/Contact.component.css"
 
 const Contact = ({language}) => {
   return (
@@ -8,6 +10,7 @@ const Contact = ({language}) => {
         icon='cont'
         variant={false}
       />
+      <ContactForm language={language} />
     </section>
   )
 }
