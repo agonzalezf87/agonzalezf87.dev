@@ -40,3 +40,23 @@
 .NotFound__goback a:hover, .NotFound__goback a:active {
     text-decoration: underline;
 }
+
+@media screen and (min-width: 469px) {
+    .NotFound {
+        flex-direction: row;
+    }
+
+    .NotFound__location {
+        width: 100%;
+    }
+
+    .NotFound__code {
+        font-size: 50vw;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .NotFound__code {
+        font-size: 40vw;
+    }
+}
