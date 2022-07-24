@@ -1,3 +1,7 @@
+.Skills {
+  justify-content: center;
+}
+
 .tags {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -5,4 +9,10 @@
   row-gap: 10px;
   column-gap: 10px;
   justify-items: center;
+}
+
+@media screen and (min-width: 480px){
+  .Skills .section__row {
+    width: 75%;
+  }
 }

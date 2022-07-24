@@ -16,3 +16,15 @@
 .Logo span {
   display: none;
 }
+
+@media screen and (min-width: 469px) {
+  #root {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 480px){
+  .Logo span {
+    display: inline-block;
+  }
+}

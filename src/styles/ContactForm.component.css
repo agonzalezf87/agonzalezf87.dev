@@ -23,8 +23,15 @@
   border-radius: 10px;
   box-shadow: 0 4px 4px 2px var(--dark-transparency);
   color: var(--dark-color-1);
+  -webkit-appearance: none;
 }
 
 .ContactForm__wrapper textarea {
   min-height: 148px;
+}
+
+@media screen and (min-width: 600px) {
+  .ContactForm {
+    width: 540px;
+  }
 }

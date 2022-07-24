@@ -56,3 +56,13 @@
   padding: 7px 0;
   text-align: center;
 }
+
+@media screen and (min-width: 600px) {
+  .Footer p {
+    display: inline-block;
+  }
+
+  .Footer p:first-child {
+    margin-right: 15px;
+  }
+}

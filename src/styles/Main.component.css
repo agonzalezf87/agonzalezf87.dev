@@ -3,6 +3,9 @@
   --mobile-minwidth: 320px;
   --mobile-maxwidth: 468px;
   --mobile-paddingx: 0 15px;
+  --tablets-minwidth: 469px;
+  --tablets-maxwidth: 768px;
+  --tablets-paddingx: 0 15px;
   --top-margin: 62px;
   --sections-padding: 60px;
 
@@ -41,7 +44,7 @@ body {
 }
 
 #root {
-  max-width: 468px;
+  max-width: var(--mobile-maxwidth);
   min-width: var(--mobile-minwidth);
 }
 
@@ -77,4 +80,14 @@ section {
   font-weight: 700;
   font-size: 2.2rem;
   line-height: 2.4rem;
+}
+
+@media screen and (min-width: 469px) {
+  #root {
+    max-width: var(--tablets-maxwidth);
+  }
+
+  section {
+    padding: 60px 30px;
+  }  
 }
