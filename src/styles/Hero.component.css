@@ -1,67 +1,87 @@
 .Hero {
-    padding: 0 15px;
-    width: 100%;
-    min-width: 320px;
-    min-height: 587px;
-    margin-top: var(--top-margin);
-    background: url(../assets/cover_code.jpg) no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+  padding: 0 15px;
+  width: 100%;
+  min-width: 320px;
+  min-height: 587px;
+  margin-top: var(--top-margin);
+  background: url(../assets/cover_code.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .Hero__card {
-    width: 277px;
-    height: 277px;
-    border-radius: 15px;
-    margin-bottom: 80px;
-    background-color: var(--dark-color-1);
-    box-shadow: 1px 1px 4px 5px rgba(0, 0, 0, 0.25);
-    color: var(--white-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 277px;
+  height: 277px;
+  border-radius: 15px;
+  margin-bottom: 80px;
+  background-color: var(--dark-color-1);
+  box-shadow: 1px 1px 4px 5px rgba(0, 0, 0, 0.25);
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .Hero__card__image {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    border: solid 10px var(--brand-color);
-    justify-self: baseline;
-    margin-top: -160px;
-    margin-bottom: 30px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: solid 10px var(--brand-color);
+  justify-self: baseline;
+  margin-top: -160px;
+  margin-bottom: 30px;
 }
 
 .Hero__card__image img {
-    width: 100%;
-    border-radius: 50%;
+  width: 100%;
+  border-radius: 50%;
 }
 
 .Hero__card__title {
-    font-size: 3rem;
-    line-height: 2.8rem;
-    letter-spacing: -0.05em;
-    font-weight: 700;
-    margin-bottom: 8px;
-    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);;
+  font-size: 3rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.05em;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);;
 }
 
 .Hero__card__subtitle {
-    bottom: 98px;
-    font-size: 2rem;
-    line-height: 1.8rem;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);;
+  bottom: 98px;
+  font-size: 2rem;
+  line-height: 1.8rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);;
 }
 
 .Hero__card__socialLinks {
-    width: 100%;
-    padding: 0 5px;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  width: 100%;
+  padding: 0 5px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (min-width: 469px){
+  .Hero {
+    padding: 0 30px;
+  }
+
+  .Hero__card {
+    width: 377px;
+    height: 377px;
+  }
+
+  .Hero__card__image {
+    width: 280px;
+    height: 280px;
+  }
+
+  .Hero__card__socialLinks {
+    width: 75%;
+  }
 }

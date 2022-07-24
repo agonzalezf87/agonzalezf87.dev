@@ -36,7 +36,7 @@ const About = ({language}) => {
               {personalDetails.map(key => (
                 <div key="details__column" className="details__column">
                   <div key={key.phone}>
-                    <a alt={language === 'en' ? "Phone number" : 'Número de teléfono'}>{key.phone.split(':')[1]}</a>
+                    <a href={key.phone} alt={language === 'en' ? "Phone number" : 'Número de teléfono'}>{key.phone.split(':')[1]}</a>
                   </div>
                   <div key={key.email}>
                     <a href={key.email} alt={language === 'en' ? "E-mail" : 'Correo Electrónico'}>{key.email.split(':')[1]}</a>

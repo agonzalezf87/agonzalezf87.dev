@@ -58,9 +58,13 @@
   font-weight: 600;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
   .details {
     font-size: 1.8rem;
     letter-spacing: normal;
+  }
+
+  .wrapper .section__row {
+    width: 75%;
   }
 }

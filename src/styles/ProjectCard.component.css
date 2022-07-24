@@ -76,3 +76,16 @@
 .tech--js {
   color: var(--tech-js);
 }
+
+@media screen and (min-width: 468px) {
+  .ProjectCard {
+    margin: 0 40px 15px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .ProjectCard {
+    width: 420px;
+    height: 280px;
+  }
+}
