@@ -1,26 +1,80 @@
 :root {
-    --site-font: 'Ubuntu', sans-serif;
-    --mobile-minwidth: 320px;
+  --site-font: 'Ubuntu', sans-serif;
+  --mobile-minwidth: 320px;
+  --mobile-maxwidth: 468px;
+  --mobile-paddingx: 0 15px;
+  --top-margin: 62px;
+  --sections-padding: 60px;
 
-    --brand-color: #00BE9D;
+  --brand-color: #00BE9D;
+  --brand-color-transparency: #00be9ed7;
+  --brand-color-active: #7fc7bb;
+  --dark-color-1: #1C211B;
+  --dark-color-2: #2A382C;
+  --white-color: #fff;
+  --white-transparency: rgba(255,255,255,.40);
+  --dark-transparency: rgba(0,0,0,.25);
+  --gray-color: #4e4e4e;
+
+  --tech-js: #F7DF1E;
+  --tech-html-1: #E34C26;
+  --tech-html-2: #E34C26;
+  --tech-css-1: #264DE4;
+  --tech-css-2: #2965F1;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: var(--site-font);
-    font-size: 62.5%;
+  font-family: var(--site-font);
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
+  background-color: var( --dark-color-2);
 }
 
 #root {
-    width: 100vw;
-    min-width: var(--mobile-minwidth);
+  max-width: 468px;
+  min-width: var(--mobile-minwidth);
+}
+
+section {
+  min-height: 587px;
+  padding: 60px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--white-color);
+}
+
+.section__row {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__row__title {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.section__row__title h2 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 2.4rem;
 }

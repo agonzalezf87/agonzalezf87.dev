@@ -1,0 +1,36 @@
+.MenuModal {
+    position: fixed;
+    width: 200px;
+    height: fit-content;
+    background-color: var(--dark-color-1);
+    border-radius: 6px;
+    top: 58px;
+    right: 15px;
+    box-shadow: 0 0 5px 0 rgba(110, 110, 110, 0.25);
+    z-index: 99;
+}
+
+.MenuModal ul {
+    list-style: none;
+    width: 100%;
+}
+
+.MenuModal ul li:not(li:last-child) {
+    width: 100%;
+    border-bottom: 2px solid var(--white-color);
+}
+
+.MenuModal ul li a {
+    display: inline-block;
+    width: 100%;
+    color: var(--white-color);
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    padding: 7px 10px;
+    text-decoration: none;
+}
+
+.MenuModal ul li a:hover, .MenuModal ul li a:active {
+    color: var(--brand-color);
+}

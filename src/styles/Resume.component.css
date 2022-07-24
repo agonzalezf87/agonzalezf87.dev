@@ -1,0 +1,19 @@
+.Resume {
+  background-color: var(--dark-color-1);
+}
+
+.Resume__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-right: 2px solid var(--gray-color);
+  padding: 10px 0;
+}
+
+.Resume__wrapper--right{
+  display: flex;
+  flex-wrap: wrap;
+  border-left: 2px solid var(--gray-color);
+  flex-direction: row-reverse;
+  padding: 10px 0;
+}

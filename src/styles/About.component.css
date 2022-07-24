@@ -1,0 +1,66 @@
+.About {
+  background-color: var(--dark-color-1);
+}
+
+.About a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.About a:hover, a:active {
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+
+.description {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  text-align: justify;
+  padding: 0 5px;
+}
+
+.description span {
+  color: var(--brand-color);
+  font-weight: 700;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  letter-spacing: -.1rem;
+}
+
+.details__column:first-child {
+  width: max-content;
+  color: var(--brand-color);
+  font-weight: 700;
+  margin-right: 15px;
+  letter-spacing: normal;
+}
+
+.details__column div {
+  height: 32px;
+}
+
+.details__column span {
+  background-color: var(--brand-color);
+  padding: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 400px) {
+  .details {
+    font-size: 1.8rem;
+    letter-spacing: normal;
+  }
+}

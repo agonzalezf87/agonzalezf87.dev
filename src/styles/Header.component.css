@@ -1,37 +1,32 @@
-
-
 .Header {
-    width: 100%;
-    min-width: var(--mobile-minwidth);
+  width: 100%;
+  min-width: var(--mobile-minwidth);
+  position: fixed;
+  height: 62px;
+  left: 0px;
+  top: 0px;
+  z-index: 99;
+  padding: 0 15px;
+  background-color: var(--dark-color-2);
+  color: var(--brand-color);
+  box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.3);
 }
 
-.LangButton {
-    width: 120px;
-    display: flex;
-    align-items: center;
+.Header__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.LangButton div {
-    width: 48px;
-    height: 36px;
-    padding: 8px 9px;
-    background-color: var(--brand-color);
-    border-radius: 5px 0 0 5px ;
+.Header nav, .Header aside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.LangButton div img {
-    height: 20px;
-}
-
-.LangButton select {
-    height: 36px;
-    font-family: var(--site-font);
-    padding: 8px;
-    border: none;
-    background-color: var(--brand-color);
-    color: #fff;
-    font-weight: medium;
-    border-radius: 0 5px 5px 0;
-    box-shadow: 0 0 1px rgb(145, 145, 145);
-    outline: none;
+@media screen and (min-width: 480px){
+  .Logo span {
+    display: inline-block;
+  }
 }

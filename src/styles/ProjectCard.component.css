@@ -1,0 +1,78 @@
+.ProjectCard {
+  width: 290px;
+  height: 260px;
+  border-radius: 25px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .25);
+}
+
+.twitter {
+  background-image: url(../assets/twitter.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.wordle {
+  background-image: url(../assets/wordle.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.ProjectCard:not(div:last-child) {
+  margin-bottom: 15px;
+}
+
+.ProjectCard__content {
+  width: 100%;
+  height: 100%;
+  background-color: var(--brand-color-transparency);
+  padding: 15px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.ProjectCard__content__text {
+  width: 100%;
+  font-size: 3.2rem;
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: 1px 1px rgba(0, 0, 0, .25);
+}
+
+.ProjectCard__content__text a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.ProjectCard__content__text h4 {
+  display: inline-block;
+}
+
+.ProjectCard__content__text svg {
+  margin-left: 10px;
+}
+
+.ProjectCard__content__technologies {
+  margin-top: 15px;
+  font-size: 3.6rem;
+}
+
+.ProjectCard__content__technologies svg:not(svg:last-child) {
+  margin-right: 15px;
+}
+
+.tech--html {
+  color: var(--tech-html-1);
+}
+
+.tech--css {
+  color: var(--tech-css-1);
+}
+
+.tech--js {
+  color: var(--tech-js);
+}

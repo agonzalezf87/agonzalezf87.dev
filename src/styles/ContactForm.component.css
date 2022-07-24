@@ -1,0 +1,30 @@
+.ContactForm {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContactForm__wrapper {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ContactForm__wrapper input, .ContactForm__wrapper textarea {
+  width: 100%;
+  font-size: 2rem;
+  padding: 7px 10px;
+  margin-bottom: 15px;
+  background-color: var(--dark-color-2);
+  border: 1px solid var(--dark-color-2);
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 2px var(--dark-transparency);
+  color: var(--dark-color-1);
+}
+
+.ContactForm__wrapper textarea {
+  min-height: 148px;
+}

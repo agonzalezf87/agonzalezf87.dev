@@ -1,14 +1,11 @@
-import React, { useContext } from 'react'
 import { LangProvider } from '../context/SiteContext'
-import { UI } from './UI'
+import { UI } from '../routes/UI'
 
 const App = () => {
   return (
-    <>
       <LangProvider>
         <UI />
       </LangProvider>
-    </>
   )
 }
 

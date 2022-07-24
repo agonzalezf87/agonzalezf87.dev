@@ -1,0 +1,30 @@
+.InterestCard {
+  background-color: var(--dark-color-2);
+  border-radius: 5px;
+  width: 125px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+  margin: 0 10px 15px;
+  box-shadow: 0 0 4px 0 rgba(0,0,0, .25);
+  flex-grow: 1;
+}
+
+.InterestCard:hover, .InterestCard:active {
+  box-shadow: 0 0 4px 2px var(--brand-color-active);
+}
+
+.InterestCard__icon {
+  width: 28px;
+  height: 28px;
+  font-size: 3.2rem;
+}
+
+.InterestCard__text {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
