@@ -8,6 +8,7 @@
   width: 100%;
   border-right: 2px solid var(--gray-color);
   padding: 10px 0;
+  margin-bottom: 15px;
 }
 
 .Resume__wrapper--right{
@@ -16,4 +17,30 @@
   border-left: 2px solid var(--gray-color);
   flex-direction: row-reverse;
   padding: 10px 0;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 769px) {
+  .Resume .section__row__title {
+    text-align: center;
+  }
+
+  .Resume__wrapper, .Resume__wrapper--right {
+    width: 90%;
+  }
+
+  .Resume__wrapper {
+    margin-right: 10px;
+  }
+
+  .Resume__wrapper--right{
+    margin-left: 1px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Resume .Resume__wrapper {
+    max-width: var(--screens-maxwidth);
+    margin: 0 auto;
+  }
 }

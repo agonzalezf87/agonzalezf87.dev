@@ -68,3 +68,24 @@
     width: 75%;
   }
 }
+
+@media screen and (min-width: 769px) {
+  .wrapper {
+    align-items: baseline;
+  }
+
+  .wrapper .section__row {
+    width: 50%;
+  }
+
+  .details__column:first-child {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .About .section__row, .wrapper {
+    max-width: var(--screens-maxwidth);
+    margin: 0 auto;
+  }
+}

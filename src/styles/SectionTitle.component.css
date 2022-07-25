@@ -40,3 +40,10 @@
 .SectionTitle__under:last-child {
   width: 40px;
 }
+
+@media screen and (min-width: 992px) {
+  .SectionTitle {
+    max-width: var(--screens-maxwidth);
+    margin: 0 auto 15px;
+  }
+}

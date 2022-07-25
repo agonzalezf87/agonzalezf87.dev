@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Link } from 'wouter'
 import {FaCss3Alt, FaJsSquare, FaHtml5, FaExternalLinkAlt} from 'react-icons/fa'
 import '../../styles/ProjectCard.component.css'
 
@@ -21,7 +20,7 @@ const ProjectCard = ({id, title, url, technologies}) => {
           <a href={url} target='_blank'><h4>{title}</h4>
           <FaExternalLinkAlt /></a>
         </div>
-        <div className="ProjectCard__content__technologies"  onClick={() => handleClick(url)}>
+        <div className="ProjectCard__content__technologies" >
           {technologies.map(tech => (
             tech === 'js' ? <FaJsSquare key={tech} className={`tech--${tech}`}/> : tech === 'css' ? <FaCss3Alt key={tech} className={`tech--${tech}`}/> : <FaHtml5 key={tech} className={`tech--${tech}`}/>
           ))}

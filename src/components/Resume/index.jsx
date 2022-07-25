@@ -10,22 +10,24 @@ const Resume = ({language}) => {
         icon='res'
         variant={false}
       />
-      <div className="section__row">
-        <div className="section__row__title">
-          <h2>{language === 'es' ? 'Experiencia Laboral' : 'Work Experience'}</h2>
+      <div className="wrapper">
+        <div className="section__row">
+          <div className="section__row__title">
+            <h2>{language === 'es' ? 'Experiencia Laboral' : 'Work Experience'}</h2>
+          </div>
+          <div className="Resume__wrapper">
+            <ResItemCard />
+            <ResItemCard />
+          </div>
         </div>
-        <div className="Resume__wrapper">
-          <ResItemCard />
-          <ResItemCard />
-        </div>
-      </div>
-      <div className="section__row">
-        <div className="section__row__title">
-          <h2>{language === 'es' ? 'Educación' : 'Education'}</h2>
-        </div>
-        <div className="Resume__wrapper--right">
-          <ResItemCard />
-          <ResItemCard />
+        <div className="section__row">
+          <div className="section__row__title">
+            <h2>{language === 'es' ? 'Educación' : 'Education'}</h2>
+          </div>
+          <div className="Resume__wrapper--right">
+            <ResItemCard />
+            <ResItemCard />
+          </div>
         </div>
       </div>
     </section>

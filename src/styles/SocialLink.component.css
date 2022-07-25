@@ -21,3 +21,10 @@
 .SocialLink .fa-brands {
     color: var(--white-color);
 }
+
+@media screen and (min-width: 769px) {
+    .SocialLink {
+        width: 48px;
+        height: 48px;
+    }
+}

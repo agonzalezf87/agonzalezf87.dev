@@ -2,6 +2,11 @@
   justify-content: center;
 }
 
+.Skills .wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .tags {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -14,5 +19,20 @@
 @media screen and (min-width: 480px){
   .Skills .section__row {
     width: 75%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Skills .wrapper {
+    width: var(--screens-maxwidth);
+  }
+
+  .Skills .section__row {
+    width: 50%;
+  }
+
+  .tags {
+    width: 60%;
+    justify-items: normal;
   }
 }
