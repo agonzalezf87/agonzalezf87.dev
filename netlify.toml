@@ -12,7 +12,7 @@
   #  status = 200
   [[redirects]]
     from = "/*"
-    to = "/*"
+    to = "/NotFound"
     status = 404
 
   ## (optional) Settings for Netlify Dev
