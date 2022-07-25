@@ -10,6 +10,7 @@ import { LangButton } from '../components/Header/LangButton'
 import { BurgerButton } from '../components/Header/BurgerButton'
 import { Logo } from '../components/Header/Logo'
 import { MenuModal } from '../components/MenuModal'
+import { Menu } from '../components/Header/Menu'
 import { LogoContainer } from '../components/Header/LogoContainer'
 import { MenuContainer } from '../components/Header/MenuContainer'
 import { MainContainer } from '../components/MainContainer'
@@ -29,6 +30,7 @@ const UI = () => {
           <Logo />
         </LogoContainer>
         <MenuContainer>
+          <Menu language={language}/>
           <LangButton language={language} changeLang={changeLang} />
           <BurgerButton setOpenMenu={setOpenMenu}/>
         </MenuContainer>

@@ -4,6 +4,17 @@
   flex-wrap: wrap;
 }
 
-.Portfolio .CtaButton {
-  margin-top: 10px;
+.Portfolio .button {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+  .Portfolio .section__row {
+    max-width: var(--screens-maxwidth);
+    margin: 0 auto;
+  }
 }

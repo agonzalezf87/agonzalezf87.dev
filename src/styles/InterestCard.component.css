@@ -28,3 +28,9 @@
   font-size: 1.8rem;
   font-weight: 900;
 }
+
+@media screen and (min-width: 769px) {
+  .InterestCard {
+    flex-grow: 0;
+  }
+}

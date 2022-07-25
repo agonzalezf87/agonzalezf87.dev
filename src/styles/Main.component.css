@@ -2,10 +2,12 @@
   --site-font: 'Ubuntu', sans-serif;
   --mobile-minwidth: 320px;
   --mobile-maxwidth: 468px;
+  --screens-maxwidth: 1366px;
   --mobile-paddingx: 0 15px;
   --tablets-minwidth: 469px;
   --tablets-maxwidth: 768px;
-  --tablets-paddingx: 0 15px;
+  --tablets-paddingx: 0 30px;
+  --screens-paddingx: 0 45px;
   --top-margin: 62px;
   --sections-padding: 60px;
 
@@ -90,4 +92,28 @@ section {
   section {
     padding: 60px 30px;
   }  
+}
+
+@media screen and (min-width: 769px) {
+  #root {
+    max-width: var(--screens-maxwidth);
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #root {
+    max-width: 100vw;
+  }
+
+  section {
+    padding: 60px 45px;
+    max-width: 100vw;
+  } 
+}
+
+@media screen and (min-width: 1024px) {
+  section {
+    padding: 60px  0;
+  }
 }

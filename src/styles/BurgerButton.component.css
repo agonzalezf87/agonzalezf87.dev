@@ -16,3 +16,9 @@
   fill: var(--white-color);
   font-size: 36px;
 }
+
+@media screen and (min-width: 1024px) {
+  .BurgerButton {
+    display: none;
+  }
+}

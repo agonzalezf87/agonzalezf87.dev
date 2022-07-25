@@ -1,7 +1,6 @@
 import { useContext } from 'react'
 import ReactDOM from 'react-dom'
 import { SiteContext } from '../context/SiteContext'
-import { Link } from 'wouter'
 import '../styles/MenuModal.component.css'
 import languageSet from '../languages'
 

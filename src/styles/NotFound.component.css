@@ -17,6 +17,7 @@
     font-weight: 900;
     text-shadow: 2px 2px rgba(117, 117, 117, 0.25);
     margin-bottom: 15px;
+    height: min-content;
 }
 
 .NotFound__location {
@@ -48,6 +49,7 @@
 
     .NotFound__location {
         width: 100%;
+        font-size: 2.4rem;
     }
 
     .NotFound__code {
@@ -58,5 +60,18 @@
 @media screen and (min-width: 600px) {
     .NotFound__code {
         font-size: 40vw;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .NotFound__code {
+        font-size: 35vw;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .NotFound__code {
+        font-size: 20vw;
     }
 }

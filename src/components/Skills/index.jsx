@@ -10,36 +10,39 @@ const Skills = ({language}) => {
         icon='skills'
         variant={true}
       />
-      <div className='section__row'>
-        <div className="section__row__title">
-          <h2>{language === "en" ? "Technical Skills" : "Habilidades Técnicas"}</h2>
+      <div className="wrapper">
+        <div className='section__row'>
+          <div className="section__row__title">
+            <h2>{language === "en" ? "Technical Skills" : "Habilidades Técnicas"}</h2>
+          </div>
+          <div className="tags">
+            <Tag text='JavaScript' />
+            <Tag text='JavaScript' />
+            <Tag text='JavaScript' />
+            <Tag text='JavaScript' />
+            <Tag text='JavaScript' />
+            <Tag text='JavaScript' />
+            <Tag text='JavaScript' />
+            <Tag text='JavaScript' />
+          </div>
         </div>
-        <div className="tags">
-          <Tag text='JavaScript' />
-          <Tag text='JavaScript' />
-          <Tag text='JavaScript' />
-          <Tag text='JavaScript' />
-          <Tag text='JavaScript' />
-          <Tag text='JavaScript' />
-          <Tag text='JavaScript' />
-          <Tag text='JavaScript' />
+        <div className='section__row'>
+          <div className="section__row__title">
+            <h2>{language === "en" ? "Soft Skills" : "Habilidades Blandas"}</h2>
+          </div>
+          <div className="tags">
+            <Tag text='JavaScript' />
+            <Tag text='JavaScript' />
+            <Tag text='Jav4aScript' />
+            <Tag text='JavaScript' />
+            <Tag text='JavaScript' />
+            <Tag text='JavaScript' />
+            <Tag text='JavaScript' />
+            <Tag text='JavaScript' />
+          </div>
         </div>
       </div>
-      <div className='section__row'>
-        <div className="section__row__title">
-          <h2>{language === "en" ? "Soft Skills" : "Habilidades Blandas"}</h2>
-        </div>
-        <div className="tags">
-          <Tag text='JavaScript' />
-          <Tag text='JavaScript' />
-          <Tag text='JavaScript' />
-          <Tag text='JavaScript' />
-          <Tag text='JavaScript' />
-          <Tag text='JavaScript' />
-          <Tag text='JavaScript' />
-          <Tag text='JavaScript' />
-        </div>
-      </div>
+      
     </section>
   )
 }

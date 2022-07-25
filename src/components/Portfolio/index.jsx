@@ -30,7 +30,9 @@ const Portfolio = ({language}) => {
         {projects.map(project => (
           <ProjectCard key={project.id} id={project.id} title={project.title} url={project.url} technologies={project.technologies} />
         ))}
-        <CtaButton ctaType='link' title={language === 'en' ? 'More Projects' : 'Más Proyectos'}/>
+        <div className="button">
+          <CtaButton ctaType='link' title={language === 'en' ? 'More Projects' : 'Más Proyectos'}/>
+        </div>
       </div>
 
     </section>
