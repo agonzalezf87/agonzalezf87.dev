@@ -49,7 +49,7 @@ const About = ({language}) => {
         </div>
         <div className="section__row">
           <h2 className="section__row__title">{language === 'en' ? 'My Interests' : 'Mis Gustos'}</h2>
-          <Interests />
+          <Interests language={language} />
         </div>
       </div>
       <div className="section__row center">

@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import { SocialLink } from './SocialLink'
 import socialLinks from '../socialLinks'
 import { SiteContext } from '../context/SiteContext'
-import myPhoto from '../assets/mypicture-square.jpg'
+import myPhoto from '../assets/mypicture-square.webp'
 import '../styles/Hero.component.css'
 
 const Hero = () => {

@@ -2,10 +2,10 @@ import { useContext } from 'react'
 import ReactDOM from 'react-dom'
 import { SiteContext } from '../context/SiteContext'
 import '../styles/MenuModal.component.css'
-import languageSet from '../languages'
+import siteContent from '../siteContent'
 
 const MenuModal = (props) => {
-  const [en, es] = languageSet
+  const [en, es] = siteContent
   const { language, openMenu } = useContext(SiteContext)
 
   const handleClick = () => {
@@ -16,14 +16,14 @@ const MenuModal = (props) => {
     <div className="MenuModal">
       <ul>
         {language === 'en' && (
-          en.Modal.map(key => (
+          en.Menu.map(key => (
             <li key={key.text}>
               <a href={key.src} onClick={handleClick}>{key.text}</a>
             </li>
           ))
         )}
         {language === 'es' && (
-          es.Modal.map(key => (
+          es.Menu.map(key => (
             <li key={key.text}>
               <a href={key.src} onClick={handleClick}>{key.text}</a>
             </li>
