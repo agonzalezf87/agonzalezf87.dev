@@ -5,8 +5,8 @@ import '../../styles/About.component.css'
 
 const personalDetails = [
   {
-    phone: "tel:+52 2292509350",
-    email: "mailto:agonzalezf87@gmail.com",
+    phone: "tel:+52 1234567890",
+    email: "mailto:my@email.com",
     address: "Juarez, NL, Mexico",
     jobStatus: "freelance"
   }
