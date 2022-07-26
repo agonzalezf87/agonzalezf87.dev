@@ -19,7 +19,7 @@ function ContactForm({language}) {
     fetch('/', {
       method: 'POST',
       headers: {
-        'Content_Type': 'application/x-www-form-urlencoded'
+        "Content-Type": "application/x-www-form-urlencoded"
       },
       body: conctactData
     })
@@ -31,7 +31,7 @@ function ContactForm({language}) {
     evt.preventDefault()
   }
   return (
-    <form ref={form} className="ContactForm" name="ContactForm" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit}>
+    <form ref={form} className="ContactForm" name="ContactForm" onSubmit={handleSubmit} data-netlify="true" data-netlify-honeypot="bot-field">
       <div className="ContactForm__wrapper">
         <input type='hidden' name='form-name' value='ContactForm' />
         <FormInput fiID='name' fiType='text' plcHolder={language === 'en' ? 'Full Name' : 'Nombre Completo'} isRequired={true} />
