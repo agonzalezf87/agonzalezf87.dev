@@ -4,7 +4,7 @@
   min-width: 320px;
   min-height: 587px;
   margin-top: var(--top-margin);
-  background: url(../assets/cover_code.jpg) no-repeat;
+  background: url(../assets/cover_code.webp) no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;

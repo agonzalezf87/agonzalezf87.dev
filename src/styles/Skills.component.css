@@ -31,6 +31,10 @@
     width: 50%;
   }
 
+  .Skills .section__row:first-child {
+    border-right: 2px solid var(--gray-color);
+  }
+
   .Skills .section__row__title {
     text-align: center;
   }

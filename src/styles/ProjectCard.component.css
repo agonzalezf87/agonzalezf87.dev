@@ -6,13 +6,13 @@
 }
 
 .twitter {
-  background-image: url(../assets/twitter.jpg);
+  background-image: url(../assets/twitter.webp);
   background-size: cover;
   background-position: center;
 }
 
 .wordle {
-  background-image: url(../assets/wordle.jpg);
+  background-image: url(../assets/wordle.webp);
   background-size: cover;
   background-position: center;
 }
