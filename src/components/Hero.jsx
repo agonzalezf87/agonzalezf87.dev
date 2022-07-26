@@ -21,7 +21,7 @@ const Hero = () => {
         </div>
         <div className="Hero__card__socialLinks">
           {socialLinks.map(link => (
-            <SocialLink key={link.id} url={link.url} alt={language === 'es' ? link.esAlt : link.enAlt} icon={link.icon}/>
+            <SocialLink key={link.id} url={link.url} alt={language === 'es' ? link.esAlt : link.enAlt} icon={link.id}/>
           ))}
         </div>
       </div>

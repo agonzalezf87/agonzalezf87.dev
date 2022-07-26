@@ -1,8 +1,11 @@
+import {FaGithub, FaLinkedinIn, FaTwitter, FaSkype} from 'react-icons/fa'
 import '../styles/SocialLink.component.css'
 
-const SocialLink = (props) => {
+const SocialLink = ({url, alt, icon}) => {
     return (
-        <a className="SocialLink" href={props.url} alt={props.alt} target='_blank' title={props.alt}><i className={props.icon}></i></a>
+        <a className="SocialLink" href={url} alt={alt} target='_blank' title={alt}>
+            {icon === 'gh' ? <FaGithub/> : icon === 'li' ? <FaLinkedinIn/> : icon === 'tw' ? <FaTwitter/> : <FaSkype/>}
+        </a>
     )
 }
 

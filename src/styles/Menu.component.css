@@ -1,6 +1,7 @@
 .Menu {
-  margin-right: 15px;
+  margin-right: 18px;
   display: none;
+  padding-top: 7px;
 }
 
 .Menu a {
@@ -8,6 +9,10 @@
   text-decoration: none;
   font-size: 1.8rem;
   line-height: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -.2rem;
+  display: inline-block;
 }
 
 .Menu a:hover, .Menu a:active {
@@ -20,14 +25,15 @@
 }
 
 .Menu ul li {
+  padding: 0 10px;
   display: inline-block;
 }
 
 .Menu ul li:not(li:last-child) {
-  margin-right: 10px;
+  margin-right: 2px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 993px) {
   .Menu {
     display: inline-block;
   }

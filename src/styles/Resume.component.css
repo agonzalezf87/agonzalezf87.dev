@@ -25,10 +25,6 @@
     text-align: center;
   }
 
-  .Resume__wrapper, .Resume__wrapper--right {
-    width: 90%;
-  }
-
   .Resume__wrapper {
     margin-right: 10px;
   }
@@ -38,9 +34,14 @@
   }
 }
 
+
+
 @media screen and (min-width: 992px) {
-  .Resume .Resume__wrapper {
-    max-width: var(--screens-maxwidth);
-    margin: 0 auto;
+  .Resume .wrapper {
+    justify-content: space-between;
+  }
+  
+  .Resume .wrapper .section__row {
+    width: 49%;
   }
 }

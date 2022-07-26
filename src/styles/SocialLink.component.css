@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    color: var(--white-color);
 }
 
 .SocialLink:hover {
@@ -18,13 +19,10 @@
     background-color: var(--brand-color-active);
 }
 
-.SocialLink .fa-brands {
-    color: var(--white-color);
-}
-
 @media screen and (min-width: 769px) {
     .SocialLink {
         width: 48px;
         height: 48px;
+        font-size: 2.2rem;
     }
 }

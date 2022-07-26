@@ -28,16 +28,41 @@ export default [
     ],
     About: [
       {
-        description: "I'm a Systems Engineer with devotion for web developing, currently working as IT Support Specialist. I enjoy watching movies at the Movie Theater but I also watch them On-Demand. Rock music, metal music, and also electronic music works for me when I'm studying developing."
+        description: "I'm a Systems Engineer with devotion for web developing, currently working as IT Support Specialist. I enjoy watching movies at the Movie Theater but I also watch them On-Demand. Rock music, metal music, and also electronic music works for me as inspiration when I'm studying at Platzi."
       },
       {
-        interests: ['music', 'webdev', 'nintendo', 'gym', 'tech', 'cooking']
+        interests: [
+          {
+            title: 'music',
+            icon: 'music'
+          },
+          {
+            title: 'webdev',
+            icon: 'webdev'
+          },
+          {
+            title: 'nintendo',
+            icon: 'nintendo'
+          },
+          {
+            title: 'gym',
+            icon: 'gym'
+          },
+          {
+            title: 'tech',
+            icon: 'tech'
+          },
+          {
+            title: 'cooking',
+            icon: 'cooking'
+          },
+        ]
       },
       {
-        soft_skills: ["Responsiveness", "Adaptation", "Collaboration", "Critical Thinking", "Empathy", "Flexibility", "Innovation", "Organization", "Patience", "Problem Solving", "Teamwork", "Work Ethic"]
+        softSkills: ["Responsiveness", "Adaptation", "Collaboration", "Critical Thinking", "Empathy", "Flexibility", "Innovation", "Organization", "Patience", "Problem Solving", "Teamwork", "Work Ethic"]
       },
       {
-        tech_skills: ["HTML5", "CSS3", "JavaScript", "React.JS", "TypeScript", "Node.JS", "PHP", "Networks", "SQL", "NoSQL", "Windows OS", "GNU/Linux OS"]
+        techSkills: ["HTML5", "CSS3", "JavaScript", "React.JS", "TypeScript", "Node.JS", "PHP", "Networks", "SQL", "NoSQL", "Windows OS", "GNU/Linux OS"]
       }
     ],
     WorkExperience: [
@@ -121,7 +146,7 @@ export default [
     ],
     About: [
       {
-        description: "Soy Ingeniero en Sistemas con devoción por el desarrollo web, actualmente me desempeño como Especialista en Soporte TI. Disfruto viendo películas en el cine, pero también las veo a pedido. La música rock, la música metal y también la música electrónica me funciona cuando estoy estudiando desarrollo."
+        description: "Soy Ingeniero en Sistemas con devoción por el desarrollo web, actualmente me desempeño como Especialista en Soporte TI. Disfruto viendo películas en el cine, pero también las veo en streaming. El rock, el metal y también la música electrónica me funciona para inspirarme mientras estoy estudiando en Platzi."
       },
       {
         interests: [
@@ -152,10 +177,10 @@ export default [
         ]
       },
       {
-        soft_skills: ["Cap. de Respuesta", "Adaptabilidad", "Colaboración", "Pensamiento Crítico", "Empantía", "Flexibilidad", "Innovacion", "Organización", "Paciencia", "Sol de Problemas", "Trabajo Equipo", "Ética Laboral"]
+        softSkills: ["Cap. de Respuesta", "Adaptabilidad", "Colaboración", "Pensamiento Crítico", "Empantía", "Flexibilidad", "Innovacion", "Organización", "Paciencia", "Sol de Problemas", "Trabajo Equipo", "Ética Laboral"]
       },
       {
-        tech_skills: ["HTML5", "CSS3", "JavaScript", "React.JS", "TypeScript", "Node.JS", "PHP", "Networks", "SQL", "NoSQL", "SO Windows", "SO GNU/Linux"]
+        techSkills: ["HTML5", "CSS3", "JavaScript", "React.JS", "TypeScript", "Node.JS", "PHP", "Networks", "SQL", "NoSQL", "SO Windows", "SO GNU/Linux"]
       }
     ],
     WorkExperience: [
@@ -197,7 +222,7 @@ export default [
         description: "SQL, NoSQL, API REST. Operaciones CRUD bases de datos relacionales y no relacionales. Configuración y gestión de bases de datos en la nube: Aamazon Web Services, Google Cloud Platform, MS Azure."
       },
       {
-        title: "Programming Fundamentals",
+        title: "Fundamentos de Programación",
         company: "Platzi.com",
         location: "En Línea",
         since: "2020",

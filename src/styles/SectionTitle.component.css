@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .SectionTitle__logo {
@@ -44,6 +44,6 @@
 @media screen and (min-width: 992px) {
   .SectionTitle {
     max-width: var(--screens-maxwidth);
-    margin: 0 auto 15px;
+    margin: 0 auto 25px;
   }
 }

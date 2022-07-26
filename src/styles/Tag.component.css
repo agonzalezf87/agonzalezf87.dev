@@ -2,12 +2,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.8rem;
-  font-weight: 700;
-  background-color: var(--brand-color);
+  font-weight: 600;
+  background-color: var(--dark-color-1);
   width: 140px;
   height: 40px;
-  border-radius: 25px;
-  text-shadow: 1px 1px rgba(0,0,0,.25);
-  box-shadow: 1px 1px 2px 0 rgba(0,0,0,.25);
+  border-radius: 10px;
+  text-shadow: 1px 1px var(--dark-transparency);
+  box-shadow: 1px 1px 2px 0 var(--dark-transparency);
+  letter-spacing: -.1rem;
+}
+
+@media screen and (min-width: 469px) {
+  .Tag {
+    width: 170px;
+    font-size: 1.8rem;
+  }
 }
