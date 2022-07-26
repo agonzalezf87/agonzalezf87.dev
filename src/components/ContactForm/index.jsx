@@ -28,7 +28,6 @@ function ContactForm({language}) {
       alert(language === 'en' ? "Thanks for writing, I'll be in touch soon." : "Gracias por escribir, pronto me pondré en contacto.")
     })
     .catch(error => alert(error))
-    evt.preventDefault()
   }
   return (
     <form ref={form} className="ContactForm" name="ContactForm" onSubmit={handleSubmit} data-netlify="true" data-netlify-honeypot="bot-field">
