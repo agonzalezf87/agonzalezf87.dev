@@ -10,11 +10,6 @@
   #  from = "/*"
   #  to = "/index.html"
   #  status = 200
-  [[redirects]]
-    from = "/*"
-    to = "/NotFound"
-    force = true
-    status = 404  
 
   ## (optional) Settings for Netlify Dev
   ## https://github.com/netlify/cli/blob/main/docs/netlify-dev.md#project-detection
