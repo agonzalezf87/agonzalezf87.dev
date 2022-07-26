@@ -1,13 +1,14 @@
-import React, {createContext, useState} from 'react'
+import {createContext, useState} from 'react'
+import { useLocalStorage } from '../hooks/useLocalStorage'
 
 const SiteContext = createContext()
 
 const LangProvider = (props) => {
-  const [language, setLang] = useState('en')
+  const [language, setLang] = useLocalStorage('User_Lang', 'en')
   const [openMenu, setOpenMenu] = useState(false)
 
   const changeLang = () => {
-  if(language === 'en'){
+    if(language === 'en'){
       setLang('es')
     }
     else {

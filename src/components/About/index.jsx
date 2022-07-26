@@ -1,6 +1,7 @@
 import { Interests } from './Interests'
 import { SectionTitle } from '../SectionTitle'
 import { CtaButton } from '../CtaButton'
+import siteContent from '../../siteContent'
 import '../../styles/About.component.css'
 
 const personalDetails = [
@@ -13,6 +14,7 @@ const personalDetails = [
 ]
 
 const About = ({language}) => {
+  const [en, es] = siteContent
   return (
     <section className="About" id="About">
       <SectionTitle 
@@ -21,7 +23,7 @@ const About = ({language}) => {
         variant={false}
       />
       <div className="section__row">
-        <p className="description"><span>{language === "en" ? "Hello! I'm Antonio" : "Hola! Me llamo Antonio"}.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis ornare purus. Morbi luctus tortor nunc, vitae posuere nibh malesuada sed. In nec tortor eu nibh tristique vehicula sed in lectus. Phasellus vitae accumsan tortor. Fusce ac vestibulum ante.</p>
+        <p className="description"><span>{language === "en" ? "Hello! I'm Antonio" : "Hola! Me llamo Antonio"}.</span> {language === 'en' ? en.About[0].description : es.About[0].description}</p>
       </div>
       <div className="wrapper">
         <div className="section__row">
@@ -49,7 +51,7 @@ const About = ({language}) => {
         </div>
         <div className="section__row">
           <h2 className="section__row__title">{language === 'en' ? 'My Interests' : 'Mis Gustos'}</h2>
-          <Interests />
+          <Interests language={language} />
         </div>
       </div>
       <div className="section__row center">

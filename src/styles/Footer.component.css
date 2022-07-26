@@ -57,6 +57,10 @@
   text-align: center;
 }
 
+.Footer__topBtn a svg {
+  margin-top: 5px;
+}
+
 @media screen and (min-width: 600px) {
   .Footer p {
     display: inline-block;

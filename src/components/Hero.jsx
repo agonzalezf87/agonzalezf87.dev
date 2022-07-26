@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import { SocialLink } from './SocialLink'
 import socialLinks from '../socialLinks'
 import { SiteContext } from '../context/SiteContext'
-import myPhoto from '../assets/mypicture-square.jpg'
+import myPhoto from '../assets/mypicture-square.webp'
 import '../styles/Hero.component.css'
 
 const Hero = () => {
@@ -21,7 +21,7 @@ const Hero = () => {
         </div>
         <div className="Hero__card__socialLinks">
           {socialLinks.map(link => (
-            <SocialLink key={link.id} url={link.url} alt={language === 'es' ? link.esAlt : link.enAlt} icon={link.icon}/>
+            <SocialLink key={link.id} url={link.url} alt={language === 'es' ? link.esAlt : link.enAlt} icon={link.id}/>
           ))}
         </div>
       </div>

@@ -11,10 +11,7 @@
   margin: 0 10px 15px;
   box-shadow: 0 0 4px 0 rgba(0,0,0, .25);
   flex-grow: 1;
-}
-
-.InterestCard:hover, .InterestCard:active {
-  box-shadow: 0 0 4px 2px var(--brand-color-active);
+  user-select: none;
 }
 
 .InterestCard__icon {
@@ -32,5 +29,10 @@
 @media screen and (min-width: 769px) {
   .InterestCard {
     flex-grow: 0;
+  }
+
+  .InterestCard:hover, .InterestCard:active {
+    transition: all ease-in 0.4s;
+    box-shadow: 0 0 4px 2px var(--brand-color-active);
   }
 }

@@ -1,8 +1,21 @@
 import { SectionTitle } from '../SectionTitle'
 import { Tag } from "./Tag"
+import siteContent from '../../siteContent'
 import '../../styles/Skills.component.css'
 
 const Skills = ({language}) => {
+  const [en, es] = siteContent
+  let myTechSkills = []
+  let mySoftSkills = []
+
+  if (language === 'en') {
+    mySoftSkills = en.About[2].softSkills
+    myTechSkills = en.About[3].techSkills
+  } else {
+    mySoftSkills = es.About[2].softSkills
+    myTechSkills = es.About[3].techSkills
+  }
+
   return (
     <section className="Skills" id="Skills">
       <SectionTitle 
@@ -16,14 +29,9 @@ const Skills = ({language}) => {
             <h2>{language === "en" ? "Technical Skills" : "Habilidades Técnicas"}</h2>
           </div>
           <div className="tags">
-            <Tag text='JavaScript' />
-            <Tag text='JavaScript' />
-            <Tag text='JavaScript' />
-            <Tag text='JavaScript' />
-            <Tag text='JavaScript' />
-            <Tag text='JavaScript' />
-            <Tag text='JavaScript' />
-            <Tag text='JavaScript' />
+            {myTechSkills.map(item => (
+              <Tag key={item} text={item} />
+            ))}
           </div>
         </div>
         <div className='section__row'>
@@ -31,14 +39,9 @@ const Skills = ({language}) => {
             <h2>{language === "en" ? "Soft Skills" : "Habilidades Blandas"}</h2>
           </div>
           <div className="tags">
-            <Tag text='JavaScript' />
-            <Tag text='JavaScript' />
-            <Tag text='Jav4aScript' />
-            <Tag text='JavaScript' />
-            <Tag text='JavaScript' />
-            <Tag text='JavaScript' />
-            <Tag text='JavaScript' />
-            <Tag text='JavaScript' />
+            {mySoftSkills.map(item => (
+              <Tag key={item} text={item} />
+            ))}
           </div>
         </div>
       </div>

@@ -16,14 +16,14 @@
 
 .ContactForm__wrapper input, .ContactForm__wrapper textarea {
   width: 100%;
-  font-size: 2rem;
-  padding: 7px 10px;
+  font-size: 1.8rem;
+  padding: 10px;
   margin-bottom: 15px;
   background-color: var(--dark-color-2);
   border: 1px solid var(--dark-color-2);
   border-radius: 10px;
   box-shadow: 0 4px 4px 2px var(--dark-transparency);
-  color: var(--dark-color-1);
+  color: var(--white-color);
   -webkit-appearance: none;
 }
 

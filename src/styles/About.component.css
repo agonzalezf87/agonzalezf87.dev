@@ -14,7 +14,7 @@
 
 .description {
   font-size: 1.8rem;
-  line-height: 2.2rem;
+  line-height: 2.4rem;
   text-align: justify;
   padding: 0 5px;
 }
@@ -64,17 +64,23 @@
     letter-spacing: normal;
   }
 
-  .wrapper .section__row {
+  .About .wrapper .section__row {
     width: 75%;
   }
 }
 
 @media screen and (min-width: 769px) {
+  .description{
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    padding: 0 40px;
+  }
+
   .wrapper {
     align-items: baseline;
   }
 
-  .wrapper .section__row {
+  .About .wrapper .section__row {
     width: 50%;
   }
 
@@ -87,5 +93,10 @@
   .About .section__row, .wrapper {
     max-width: var(--screens-maxwidth);
     margin: 0 auto;
+  }
+  
+  .About .wrapper .section__row:first-child {
+    width: 35%;
+    margin-left: 15%;
   }
 }

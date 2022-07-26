@@ -1,19 +1,20 @@
 import { SocialLink } from './SocialLink'
 import socialLinks from '../socialLinks'
-import languageSet from '../languages'
+import siteContent from '../siteContent'
+import { FaArrowUp } from 'react-icons/fa'
 import '../styles/Footer.component.css'
 
 function Footer({language}) {
-  const [en, es] = languageSet
+  const [en, es] = siteContent
   return (
     <footer className='Footer'>
       <div className="Footer__container">
         <div className="Footer__topBtn">
-          <a href="/#Top"><i className="fa-solid fa-arrow-up"></i></a>
+          <a href="/#Top"><FaArrowUp /></a>
         </div>
         <div className="Footer__social">
           {socialLinks.map(link => (
-            <SocialLink key={link.id} url={link.url} alt={language === 'es' ? link.esAlt : link.enAlt} icon={link.icon}/>
+            <SocialLink key={link.id} url={link.url} alt={language === 'es' ? link.esAlt : link.enAlt} icon={link.id}/>
           ))}
         </div>
         <div className="Footer__legend">

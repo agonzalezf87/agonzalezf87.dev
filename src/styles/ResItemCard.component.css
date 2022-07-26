@@ -1,7 +1,7 @@
 .ResItemCard {
   position: relative;
   width: calc(100% - 40px);
-  max-height: 330px;
+  max-height: 260px;
   border-right: 2px solid var(--brand-color);
   padding: 10px;
   background-color: var(--dark-color-2);
@@ -10,7 +10,7 @@
 }
 
 .ResItemCard:not(div:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .ResItemCard::before {
@@ -74,4 +74,17 @@
 
 .ResItemCard__text {
   white-space: break-spaces;
+}
+
+@media screen and (min-width: 992px) {
+  .ResItemCard {
+    height: 200px;
+    padding-top: 15px;
+  }
+}
+
+@media screen and (min-width: 1400px){
+  .ResItemCard {
+    height: 180px;
+  }
 }

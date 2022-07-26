@@ -33,7 +33,13 @@
 
 @media screen and (min-width: 769px) {
   .Header {
-    padding: 0;
+    padding: 0 30px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Header {
+    padding: 0 45px;
   }
 
   .Header__container {
