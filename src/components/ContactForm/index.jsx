@@ -34,6 +34,7 @@ function ContactForm({language}) {
 
   return (
     <form ref={form} className="ContactForm" name="ContactForm" onSubmit={handleSubmit} data-netlify="true" data-netlify-honeypot="bot-field">
+      <input type='hidden' name='form-name' value='ContactForm' />
       <FormInput fiID='name' fiType='text' plcHolder={language === 'en' ? 'Full Name' : 'Nombre Completo'} isRequired={true} />
       <FormInput fiID='telephone' fiType='tel' plcHolder={language === 'en' ? 'Phone Number' : 'Número Telefónico'} isRequired={false} />
       <FormInput fiID='email' fiType='email' plcHolder={language === 'en' ? 'E-Mail' : 'Correo Elecrónico'} isRequired={true} />
