@@ -6,7 +6,9 @@ import "../../styles/ContactForm.component.css"
 
 function ContactForm({language}) {
   const form = useRef(null)
+
   const handleSubmit = (evt) => {
+    evt.preventDefault()
     const formData = new FormData(form.current)
     const conctactData = {
       'name': formData.get('name'),
@@ -29,6 +31,7 @@ function ContactForm({language}) {
     })
     .catch(error => alert(error))
   }
+
   return (
     <form ref={form} className="ContactForm" name="ContactForm" onSubmit={handleSubmit} data-netlify="true" data-netlify-honeypot="bot-field">
       <div className="ContactForm__wrapper">
