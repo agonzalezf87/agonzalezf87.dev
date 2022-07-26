@@ -4,12 +4,14 @@ import { FormInput } from "./FormInput"
 import "../../styles/ContactForm.component.css"
 
 function ContactForm({language}) {
-  const handleSubmit = (evt) => {
+  /* const handleSubmit = (evt) => {
     evt.preventDefault()
-  }
+  } */
   return (
-    <form className="ContactForm" action="#" onSubmit={handleSubmit}>
+    <form className="ContactForm" name="ContactForm" method="POST" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field" >
       <div className="ContactForm__wrapper">
+        <input type='hidden' name='form-name' value='ContactForm' />
+        <div hidden><input name="bot-field" /></div>
         <FormInput fiID='name' fiType='text' plcHolder={language === 'en' ? 'Full Name' : 'Nombre Completo'} isRequired={true} />
         <FormInput fiID='telephone' fiType='tel' plcHolder={language === 'en' ? 'Phone Number' : 'Número Telefónico'} isRequired={false} />
         <FormInput fiID='email' fiType='email' plcHolder={language === 'en' ? 'E-Mail' : 'Correo Elecrónico'} isRequired={true} />

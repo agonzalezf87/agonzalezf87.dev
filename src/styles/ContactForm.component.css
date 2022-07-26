@@ -17,7 +17,7 @@
 .ContactForm__wrapper input, .ContactForm__wrapper textarea {
   width: 100%;
   font-size: 1.8rem;
-  padding: 10px;
+  padding: 10px 20px 10px;
   margin-bottom: 15px;
   background-color: var(--dark-color-2);
   border: 1px solid var(--dark-color-2);
