@@ -16,7 +16,7 @@ function ContactForm({language}) {
       'message': formData.get('message'),
     }
     
-    fetch('/#Contact', {
+    fetch('/', {
       method: 'POST',
       headers: {
         'Content_Type': 'application/x-www-form-urlencoded'
