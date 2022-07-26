@@ -10,9 +10,7 @@ const Contact = ({language}) => {
         icon='cont'
         variant={false}
       />
-      <div className="ContactForm__wrapper">
-        <ContactForm language={language} />
-      </div>
+      <ContactForm language={language} />
     </section>
   )
 }
