@@ -1,8 +1,8 @@
 import { useState, useRef } from 'react'
 import { CtaButton } from "../CtaButton"
 import { FormInput } from "./FormInput"
+import { FormSpinner } from "./FormSpinner"
 import emailjs from '@emailjs/browser'
-import { CgSpinnerTwo } from 'react-icons/cg'
 import "../../styles/ContactForm.component.css"
 
 const SERVICE_ID = 'service_vkczyzq'
@@ -25,6 +25,7 @@ function ContactForm({language}) {
 
   return (
     <div className="ContactForm__wrapper">
+      <FormSpinner isLoading={true} isSuccess={false} isError={false} text={language === 'en' ? 'Sending message...' : 'Enviando el mensaje...'} />
       <form ref={form} className="ContactForm" onSubmit={handleSubmit}>
         <FormInput fiID='name' fiType='text' plcHolder={language === 'en' ? 'Full Name' : 'Nombre Completo'} isRequired={true} />
         <FormInput fiID='telephone' fiType='tel' plcHolder={language === 'en' ? 'Phone Number' : 'Número Telefónico'} isRequired={false} />
