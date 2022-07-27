@@ -60,7 +60,7 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  color: var(--brand-color);
+  color: var(--brand-color-active);
 }
 
 @keyframes spinner {
@@ -68,7 +68,12 @@
 }
 
 .spinner {
+  color: var(--brand-color);
   animation: spinner .8s linear infinite;
+}
+
+.error {
+  color: #ff6000;
 }
 
 .FormSpinner__content__message {

@@ -9,23 +9,54 @@ const SERVICE_ID = 'service_vkczyzq'
 const PUBLIC_KEY = 'Fcw-qn1tCXObQBMPN'
 
 function ContactForm({language}) {
-  const {loading, setLoading} = useState(false)
-  const TEMPLATE_ID = language === 'en' ? 'template_mmzbgli' : 'template_se96toz' 
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(false)
+  const [success, setSuccess] = useState(false)
+  const [message, setMessage] = useState('')
   const form = useRef(null)
+
+  const TEMPLATE_ID = language === 'en' ? 'template_mmzbgli' : 'template_se96toz' 
 
   const handleSubmit = (evt) => {
     evt.preventDefault()
     setLoading(true)
+    setMessage(language == 'en' ? "Sending message..." : "Enviando mensaje..")
+    setError(false)
+    setSuccess(false)
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
     .then(result => {
-      form.current.reset()
+      if(result.status === 200){
+        form.current.reset()
+        setLoading(false)
+        setSuccess(true)
+        setMessage(language == 'en' ? "Your message was sent." : "Su mensaje ha sido enviado.")
+        setTimeout(() => setSuccess(false), 1000)
+      } else {
+        setLoading(false)
+        setError(true)
+        setMessage(language == 'en' ? `Something went wrong. Try again.` : `Algo salió mal. Intente de nuevo.`)
+        setTimeout(() => setError(false), 1000)
+      }
     })
-    .catch(error => {console.log(error.text)})
+    .catch(error => {
+      setLoading(false)
+      setError(true)
+      setMessage(language == 'en' ? `Error: ${error}. Try again.` : `Error: ${error}. Intente de nuevo.`)
+      setTimeout(() => setError(false), 1000)
+    })
   }
 
   return (
     <div className="ContactForm__wrapper">
-      <FormSpinner isLoading={true} isSuccess={false} isError={false} text={language === 'en' ? 'Sending message...' : 'Enviando el mensaje...'} />
+      {!!loading && (
+        <FormSpinner icon='loading' message={message} />
+      )}
+      {!!success && (
+        <FormSpinner icon='success' message={message} />
+      )}
+      {!!error && (
+        <FormSpinner icon='error' message={message} />
+      )}
       <form ref={form} className="ContactForm" onSubmit={handleSubmit}>
         <FormInput fiID='name' fiType='text' plcHolder={language === 'en' ? 'Full Name' : 'Nombre Completo'} isRequired={true} />
         <FormInput fiID='telephone' fiType='tel' plcHolder={language === 'en' ? 'Phone Number' : 'Número Telefónico'} isRequired={false} />
