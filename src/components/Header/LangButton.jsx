@@ -1,23 +1,17 @@
-import esFlag from '../../assets/es-flag.svg'
-import enFlag from '../../assets/en-flag.svg'
 import '../../styles/LangButton.component.css'
 
-const LangButton = (props) => {
-    const handleChange = (evt) => {
-        props.changeLang(evt.target.value)
-    }
+const LangButton = ({language, changeLang}) => {
+  const handleClick = () => {
+    language === 'en' ? changeLang('es') : changeLang('en')
+  }
 
-    return (
-        <div className='LangButton'>
-            <div>
-                <img src={props.language === 'en' ? enFlag : esFlag} alt={`${props.language} flag`} />
-            </div>
-            <select value={props.language} onChange={handleChange}>
-                <option value="es" >ES</option>
-                <option value="en" >EN</option>
-            </select>
-        </div>
-    )
+  return (
+    <div className="LangButton" title={language === 'en' ? 'Cambiar a español' : 'Change to english'} onClick={handleClick}>
+      <div className={language === 'en' ? 'LangButton__wrapper' : 'LangButton__wrapper right'}>
+        <div className={language === 'en' ? "LangButton__slider en" : "LangButton__slider es"}></div>
+      </div>
+    </div>
+  )
 }
 
 export { LangButton }
