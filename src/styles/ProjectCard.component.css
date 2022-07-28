@@ -3,6 +3,7 @@
   height: 260px;
   border-radius: 25px;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, .25);
+  margin-bottom: 15px;
 }
 
 .twitter {
@@ -21,10 +22,6 @@
   background-image: url(../assets/webportfolio.webp);
   background-size: cover;
   background-position: center;
-}
-
-.ProjectCard:not(div:last-child) {
-  margin-bottom: 15px;
 }
 
 .ProjectCard__content {
@@ -68,10 +65,7 @@
   font-size: 3.2rem;
   height: 32px;
   text-shadow: -1px 1px var(--dark-color-1);
-}
-
-.ProjectCard__content__links a:first-child {
-  margin-right: 25px;
+  margin: 0 12px;
 }
 
 .ProjectCard__content__links a:hover {
@@ -104,7 +98,7 @@
 
 @media screen and (min-width: 468px) {
   .ProjectCard {
-    margin: 0 20px 15px;
+    margin: 0 10px 15px;
   }
 }
 
