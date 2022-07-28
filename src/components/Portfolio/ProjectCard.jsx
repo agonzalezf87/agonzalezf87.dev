@@ -15,7 +15,7 @@ const ProjectCard = ({id, title, url, repo, technologies}) => {
 
   return (
     <div className={`ProjectCard ${id}`} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-      <div className={!!isHover ? 'ProjectCard__content' : 'PrjectCard__content hidden'}>
+      <div className={!!isHover ? 'ProjectCard__content' : 'ProjectCard__content hidden'}>
         <div className="ProjectCard__content__text">
           <h4>{title}</h4>
         </div>
