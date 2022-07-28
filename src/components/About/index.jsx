@@ -1,6 +1,7 @@
 import { Interests } from './Interests'
 import { SectionTitle } from '../SectionTitle'
-import { CtaButton } from '../CtaButton'
+import { Link } from 'wouter'
+import { FaFilePdf } from 'react-icons/fa'
 import siteContent from '../../siteContent'
 import '../../styles/About.component.css'
 
@@ -55,7 +56,8 @@ const About = ({language}) => {
         </div>
       </div>
       <div className="section__row center">
-        <CtaButton ctaType='file' title={language === 'en' ? 'Download CV' : 'Descargar CV'}/>
+        <a href={language === 'en' ? 'https://1drv.ms/b/s!ArNGFqGMYFe_gpRakKbqLuhn_z9NkA' : 'https://1drv.ms/b/s!ArNGFqGMYFe_gpRZ9qPmWe9RszhnrQ'} target='_blank'>{language === 'en' ? 'Download CV' : 'Descargar CV'} <FaFilePdf /></a>
+        {/* <CtaButton ctaType='file' title={language === 'en' ? 'Download CV' : 'Descargar CV'}/> */}
       </div>
     </section>
   )

@@ -29,7 +29,7 @@ const Skills = ({language}) => {
             <h2>{language === "en" ? "Technical Skills" : "Habilidades Técnicas"}</h2>
           </div>
           <div className="tags">
-            {myTechSkills.map(item => (
+            {myTechSkills.sort().map(item => (
               <Tag key={item} text={item} />
             ))}
           </div>
@@ -39,7 +39,7 @@ const Skills = ({language}) => {
             <h2>{language === "en" ? "Soft Skills" : "Habilidades Blandas"}</h2>
           </div>
           <div className="tags">
-            {mySoftSkills.map(item => (
+            {mySoftSkills.sort().map(item => (
               <Tag key={item} text={item} />
             ))}
           </div>

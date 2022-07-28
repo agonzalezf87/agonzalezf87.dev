@@ -1,6 +1,6 @@
 .BurgerButton {
   cursor: pointer;
-  width: 48px;
+  width: 36px;
   height: 36px;
   background-color: var(--brand-color);
   border-radius: 6px;

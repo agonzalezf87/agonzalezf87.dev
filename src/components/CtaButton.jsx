@@ -1,11 +1,12 @@
-import { MdSimCardDownload, MdSend, MdOutlineLaunch} from 'react-icons/md'
+import { MdSend, MdOutlineLaunch} from 'react-icons/md'
+import { FaFilePdf } from 'react-icons/fa'
 import '../styles/CtaButton.component.css'
 
 const CtaButton = ({ctaType, title}) => {
   if (ctaType === 'file') {
     return (
       <button className='CtaButton'>
-        {title} <MdSimCardDownload />
+        {title} <FaFilePdf />
       </button>
     )
   } else if (ctaType === 'open') {
