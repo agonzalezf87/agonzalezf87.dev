@@ -111,6 +111,28 @@ export default [
         description: "Structured Programming. Object-Oriented Programming. Micro services."
       },
     ],
+    Projects: [
+      {
+        id: 'website',
+        title: "web portfolio",
+        url: "/",
+        repo: "https://github.com/agonzalezf87/agonzalezf87.dev",
+        technologies: ['html', 'css', 'react']
+      },{
+        id: 'wordle',
+        title: "wordle js",
+        url: "https://agonzalezf87.github.io/wordle/",
+        repo: "https://github.com/agonzalezf87/wordle",
+        technologies: ['html', 'css', 'js']
+      },
+      {
+        id: 'twitter',
+        title: "twitter clone",
+        url: "https://agonzalezf87.github.io/twitterclone/",
+        repo: "https://github.com/agonzalezf87/twitterclone",
+        technologies: ['html', 'css']
+      },
+    ],
     Footer: [
       {
         text: "All Rights Reserved",
