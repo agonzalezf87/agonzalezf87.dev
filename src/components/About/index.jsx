@@ -1,6 +1,5 @@
 import { Interests } from './Interests'
 import { SectionTitle } from '../SectionTitle'
-import { Link } from 'wouter'
 import { FaFilePdf } from 'react-icons/fa'
 import siteContent from '../../siteContent'
 import '../../styles/About.component.css'
