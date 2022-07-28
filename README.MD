@@ -16,7 +16,7 @@ You can visit the site [Here](https://antoniogonzalez.xyz)
 - Contact
 
 ## Site Features
-- This site is built in React.JS version 18 and it's completele stateful
+- This site is built in React.JS version 18 and it's completely stateful
 - Capability to switch between english and spanish languages, saving the state in the users browser
 - Mobiele First responsive
 - Contact form powered by EmailJS
