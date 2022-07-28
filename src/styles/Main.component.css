@@ -22,10 +22,9 @@
   --gray-color: #4e4e4e;
 
   --tech-js: #F7DF1E;
-  --tech-html-1: #E34C26;
-  --tech-html-2: #E34C26;
-  --tech-css-1: #264DE4;
-  --tech-css-2: #2965F1;
+  --tech-html: #E34C26;
+  --tech-css: #264DE4;
+  --tech-react: #61DBFB;
 }
 
 * {
