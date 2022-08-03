@@ -118,7 +118,15 @@ export default [
         url: "/",
         repo: "https://github.com/agonzalezf87/agonzalezf87.dev",
         technologies: ['html', 'css', 'react']
-      },{
+      },
+      {
+        id: 'weatherapp',
+        title: "weather app",
+        url: "https://weatherapp-ac4657.netlify.app/",
+        repo: "https://github.com/agonzalezf87/weatherapp",
+        technologies: ['html', 'css', 'react']
+      },
+      {
         id: 'wordle',
         title: "wordle js",
         url: "https://agonzalezf87.github.io/wordle/",
@@ -207,7 +215,7 @@ export default [
     ],
     WorkExperience: [
       {
-        title: "Especialista de Sisemas Jr.",
+        title: "Especialista de Sistemas Jr.",
         company: "Hammond Power Solutions",
         location: "Guadalupe, Nuevo Leon, MX",
         since: "2021 - Actual Job",
@@ -234,7 +242,7 @@ export default [
         company: "Instituto Tecnológico Superior de Alvarado",
         location: "Alvarado, Veracruz, MX",
         since: "2010",
-        description: "Data Base and Object-Oriented Programming specialization."
+        description: "Especialidad en Bases de Datos y Programación Orientada a Objetos."
       },
       {
         title: "Bases de Datos",

@@ -7,6 +7,8 @@
   background-color: var(--dark-color-2);
   border-radius: 0 5px 5px 0;
   z-index: 97;
+  text-align: right;
+  overflow-y: clip;
 }
 
 .ResItemCard:not(div:last-child) {
@@ -41,6 +43,7 @@
   border-right: none;
   border-left: 2px solid var(--brand-color);
   border-radius: 5px  0 0 5px;
+  text-align: left;
 }
 
 .Resume__wrapper--right .ResItemCard::before {
