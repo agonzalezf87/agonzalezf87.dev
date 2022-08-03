@@ -6,8 +6,9 @@ import '../../styles/About.component.css'
 
 const personalDetails = [
   {
-    phone: "tel:+52 1234567890",
-    email: "mailto:my@email.com",
+    phone: "tel:+52 2292509350",
+    email: "mailto:agonzalezf87@gmail.com",
+    email2: "mailto:agonzalezf87@outlook.com",
     address: "Juarez, NL, Mexico",
     jobStatus: "freelance"
   }
@@ -32,6 +33,7 @@ const About = ({language}) => {
             <div className="details__column">
               <div>{language === 'en' ? 'Phone' : 'Teléfono'}</div>
               <div>{language === 'en' ? 'E-Mail' : 'Correo-e'}</div>
+              <div>{language === 'en' ? 'Alt. E-Mail' : 'Correo-e Alt.'}</div>
               <div>{language === 'en' ? 'Address' : 'Dirección'}</div>
               <div>{language === 'en' ? 'Job Satus' : 'Disp. Laboral'}</div>
             </div>
@@ -42,6 +44,9 @@ const About = ({language}) => {
                   </div>
                   <div key={key.email}>
                     <a href={key.email} alt={language === 'en' ? "E-mail" : 'Correo Electrónico'}>{key.email.split(':')[1]}</a>
+                  </div>
+                  <div key={key.email2}>
+                    <a href={key.email2} alt={language === 'en' ? "E-mail" : 'Correo Electrónico'}>{key.email2.split(':')[1]}</a>
                   </div>
                   <div key={key.address}>{key.address}</div>
                   <div key={key.jobStatus}><span>{key.jobStatus}</span></div>
