@@ -24,6 +24,12 @@
   background-position: center;
 }
 
+.weatherapp {
+  background-image: url(../assets/weatherapp.webp);
+  background-size: cover;
+  background-position: center;
+}
+
 .ProjectCard__content {
   width: 100%;
   height: 100%;
