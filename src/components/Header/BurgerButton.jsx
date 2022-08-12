@@ -1,7 +1,8 @@
 import { useContext } from 'react'
 import { SiteContext } from '../../context/SiteContext'
 import { MdMenu, MdClose } from 'react-icons/md'
-import '../../styles/BurgerButton.component.css'
+import BurgerBtnStyles from '../../styles/BurgerButton.module.css'
+import cn from 'classnames'
 
 const BurgerButton = (props) => {
   const { openMenu } = useContext(SiteContext)
@@ -11,7 +12,7 @@ const BurgerButton = (props) => {
   }
 
   return (
-    <div className={`BurgerButton${!!openMenu ? ' active' : ''}`} onClick={handleClick}>
+    <div className={!!openMenu ? cn(BurgerBtnStyles.BurgerButton, BurgerBtnStyles.active) : BurgerBtnStyles.BurgerButton } onClick={handleClick}>
       {!openMenu ? <MdMenu /> : <MdClose />}
     </div>
   )

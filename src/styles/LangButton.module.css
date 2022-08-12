@@ -36,13 +36,9 @@
   border: 1px solid rgba(255, 255, 255, .8);
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, .8);
-}
-
-.en {
   transition: transform 0.4s ease;
 }
 
-.es {
-  transition: transform 0.4s ease;
+.right {
   transform: translateX(36px);
 }

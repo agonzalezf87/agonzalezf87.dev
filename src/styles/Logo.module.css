@@ -13,10 +13,6 @@
   height: 48px;
 }
 
-/* .Logo span {
-  display: none;
-} */
-
 @media screen and (min-width: 469px) {
   #root {
     max-width: 768px;

@@ -9,6 +9,7 @@
     align-items: center;
     text-decoration: none;
     color: var(--white-color);
+    transition: all .3s ease;
 }
 
 .SocialLink:hover {

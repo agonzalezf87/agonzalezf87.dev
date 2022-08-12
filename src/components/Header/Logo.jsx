@@ -1,9 +1,9 @@
 import brandLogo from '../../assets/logo.png'
-import '../../styles/Logo.component.css'
+import LogoStyles from '../../styles/Logo.module.css'
 
 const Logo = () => {
   return (
-    <div className="Logo">
+    <div className={LogoStyles.Logo}>
       <img src={brandLogo} alt="Antonio Gonzalez Logo" />
       <span>AG.Dev</span>
     </div>

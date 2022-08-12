@@ -1,4 +1,5 @@
-import '../../styles/LangButton.component.css'
+import LangBtnStyles from '../../styles/LangButton.module.css'
+import cn from 'classnames'
 
 const LangButton = ({language, changeLang}) => {
   const handleClick = () => {
@@ -6,9 +7,9 @@ const LangButton = ({language, changeLang}) => {
   }
 
   return (
-    <div className={language === 'en' ? "LangButton eng" : "LangButton spa"} title={language === 'en' ? 'Cambiar a español' : 'Change to english'} onClick={handleClick}>
-      <div className={language === 'en' ? 'LangButton__wrapper' : 'LangButton__wrapper right'}>
-        <div className={language === 'en' ? "LangButton__slider en" : "LangButton__slider es"}>{language}</div>
+    <div className={language === 'en' ? cn(LangBtnStyles.LangButton, LangBtnStyles.eng) : cn(LangBtnStyles.LangButton, LangBtnStyles.spa)} title={language === 'en' ? 'Cambiar a español' : 'Change to english'} onClick={handleClick}>
+      <div className={LangBtnStyles.LangButton__wrapper}>
+        <div className={language === 'en' ? LangBtnStyles.LangButton__slider : cn(LangBtnStyles.LangButton__slider, LangBtnStyles.right)}>{language}</div>
       </div>
     </div>
   )

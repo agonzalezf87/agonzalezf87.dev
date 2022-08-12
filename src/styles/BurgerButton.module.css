@@ -6,13 +6,15 @@
   border-radius: 6px;
   color: var(--white-color);
   text-align: center;
+  transition: all .1s ease;
 }
 
-.BurgerButton.active {
+.active {
+  transition: all .1s ease;
   background-color: var(--brand-color-active);
 }
 
-.BurgerButton svg {
+.BurgerButton > svg {
   fill: var(--white-color);
   font-size: 36px;
 }
